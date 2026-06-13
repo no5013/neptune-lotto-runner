@@ -1,0 +1,70 @@
+Lottery Summary
+===============
+Input file: /Users/pongsakorn.somsri/workspaces/Neptune/RankingRandom/lottery_runner/input/form-submissions.csv
+Random seed: 1781325922
+Max wins per email: 2
+Default item capacity: 20
+
+Eligible unique emails: 69
+Skipped rows (CHEAT=Yes): 11
+Skipped rows (duplicate ranks found): 0
+Total eligible requests: 294
+Total assignments: 91
+Total unallocated requests: 203
+
+Assignments by rank:
+- Rank 1: 35 assigned / 69 requests
+- Rank 2: 26 assigned / 62 requests
+- Rank 3: 13 assigned / 47 requests
+- Rank 4: 11 assigned / 44 requests
+- Rank 5: 0 assigned / 37 requests
+- Rank 6: 6 assigned / 35 requests
+
+Assignments by item:
+- ข้าวปั้นม้าเต่อ สีขาว: 4 / 6
+- ข้าวปั้นม้าเต่อ สีน้ำตาล: 1 / 6
+- ข้าวปั้นสาหร่ายจมูกแดง: 28 / 30
+- บันตาแป๋ว v.2: 6 / 6
+- บันอีโมจิ ไซส์กลาง: 5 / 5
+- ปังครึ่งโลสีอ่อน: 15 / 15
+- ปังฉีก สีอ่อน: 5 / 5
+- ปังฉีก สีเข้ม: 5 / 5
+- มังคุดจมูกแดง: 5 / 5
+- มันอ้วนแลบลิ้น: 6 / 6
+- เค้กดาว Laomi: 6 / 6
+- เซ็ตมะเขือเทศคู่: 5 / 5
+
+Emails with 2 wins:
+- 220101034@slc.ac.th
+- 66112213@dpu.ac.th
+- ananya.k1214@gmail.com
+- aunya.galmour.sigmaboy@gmail.com
+- barbiespoon88@gmail.com
+- cap.kawintida@gmail.com
+- cheewaporn.run@gmail.com
+- imneenx@gmail.com
+- jobkjob123@gmail.com
+- kittidej.c9@gmail.com
+- markwisut2546@gmail.com
+- mutmijrshya@gmail.com
+- nananapatt.s@gmail.com
+- nattamolplubbb@gmail.com
+- nchotwong@gmail.com
+- nicelowlife@gmail.com
+- nutchaya.chu@spumail.net
+- oummigimigo@gmail.com
+- phattarit2545@gmail.com
+- pimjutha2529@gmail.com
+- pimratachaiphromnimit@gmail.com
+- pissinekg@gmail.com
+- poomkornkeaw@gmail.com
+- prarametsaelee@gmail.com
+- pream1792546@gmail.com
+- s6801091610438@email.kmutnb.ac.th
+- spntp26@gmail.com
+- ssamita31@gmail.com
+- tanaporn.miww@gmail.com
+- theprint15@gmail.com
+- thitaya.jampawong@gmail.com
+- warissara.pholbunnamlarp@gmail.com
+- workwithnksrt@gmail.com
