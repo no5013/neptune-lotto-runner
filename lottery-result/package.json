@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "lottery": "tsx scripts/run-lottery.ts",
-    "export": "tsx scripts/export-winners.ts"
+    "export": "tsx scripts/export-winners.ts",
+    "orchestra": "tsx scripts/orchestrate.ts"
   },
   "dependencies": {
     "next": "16.2.9",

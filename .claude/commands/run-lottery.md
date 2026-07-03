@@ -26,16 +26,16 @@ Parse `$ARGUMENTS` for optional flags to pass through:
 
 Build the extra flags string from whatever was provided.
 
-### STEP 2 — Run via orchestrator
+### STEP 2 — Run via npm
 
-Run this from the repo root:
+Run this from `lottery-result/`:
 
 ```bash
-python3 orchestrate.py run [extra flags]
+npm run orchestra run [extra flags]
 ```
 
-This runs the full pipeline: lottery (TypeScript) → publish to web → export Excel.
-Output lands in `output/run_YYYYMMDD_HHMMSS/`.
+This runs the full pipeline: lottery → publish to web → export Excel.
+Output lands in `output/run_YYYYMMDD_HHMMSS/` at the repo root.
 
 Capture stdout to extract the output folder path (the line starting with `Output folder :`).
 
