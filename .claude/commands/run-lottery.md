@@ -28,10 +28,10 @@ Build the extra flags string from whatever was provided.
 
 ### STEP 2 — Run via npm
 
-Run this from `lottery-result/`:
+Run this from the repo root:
 
 ```bash
-npm run orchestra run [extra flags]
+npm run draw [extra flags]
 ```
 
 This runs the full pipeline: lottery → publish to web → export Excel.
