@@ -34,7 +34,8 @@ Run this from the repo root:
 python3 orchestrate.py run [extra flags]
 ```
 
-This runs the full pipeline: lottery → publish to web → export Excel.
+This runs the full pipeline: lottery (TypeScript) → publish to web → export Excel.
+Output lands in `output/run_YYYYMMDD_HHMMSS/`.
 
 Capture stdout to extract the output folder path (the line starting with `Output folder :`).
 
@@ -63,6 +64,6 @@ Parse the summary file and output **exactly** in this format (fill in real value
 
 Top demand at Rank 1: `<rank 1 assigned>` assigned out of `<rank 1 requests>` requests.
 
-Output folder: `lottery_runner/output/<run_folder>/`
+Output folder: `output/<run_folder>/`
 
 > Web results published to `lottery-result/public/data/` and Excel exported to the run folder.
