@@ -30,8 +30,8 @@ function section(title: string) {
   console.log(`\n── ${title} ${"─".repeat(Math.max(0, 48 - title.length))}`);
 }
 
-function npm(...args: string[]) {
-  execFileSync("npm", ["run", ...args], { cwd: ROOT, stdio: "inherit" });
+function tsx(script: string, ...args: string[]) {
+  execFileSync("npx", ["tsx", path.join(SCRIPT_DIR, script), ...args], { cwd: ROOT, stdio: "inherit" });
 }
 
 function latestRunDir(): string {
@@ -67,7 +67,7 @@ function cmdRun(argv: string[]) {
   const flags    = argv.filter(a => !["--no-web", "--no-export"].includes(a));
 
   section("Running lottery");
-  npm("lottery", ...(flags.length ? ["--", ...flags] : []));
+  tsx("run-lottery.ts", ...flags);
 
   const runDir = latestRunDir();
 
@@ -78,7 +78,7 @@ function cmdRun(argv: string[]) {
 
   if (!noExport) {
     section("Exporting Excel");
-    npm("export", "--", `--results=${path.join(runDir, "results.json")}`);
+    tsx("export-winners.ts", `--results=${path.join(runDir, "results.json")}`);
   }
 
   console.log(`\n✓ All done.  Run folder: output/${path.basename(runDir)}/`);
@@ -101,7 +101,7 @@ function cmdExport(argv: string[]) {
   const extra = [`--results=${path.join(runDir, "results.json")}`];
   const outArg = argv.find(a => a.startsWith("--output=")) ?? (argv.indexOf("--output") !== -1 ? `--output=${argv[argv.indexOf("--output") + 1]}` : undefined);
   if (outArg) extra.push(outArg);
-  npm("export", "--", ...extra);
+  tsx("export-winners.ts", ...extra);
   console.log("\n✓ Done.");
 }
 

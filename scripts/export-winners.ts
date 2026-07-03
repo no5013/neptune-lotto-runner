@@ -153,4 +153,4 @@ async function main() {
   console.log(`Grand total : ฿${grandTotal.toLocaleString()}`);
 }
 
-main().catch(e => { console.error(e); process.exit(1); });
+main().then(() => process.exit(0)).catch(e => { console.error(e); process.exit(1); });
