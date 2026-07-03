@@ -9,11 +9,18 @@ interface ItemResult {
   rank: number;
 }
 
+interface PickupPeriod {
+  label: string;
+  time: string;
+}
+
 interface Person {
   email: string;
   name: string;
   lineId: string;
   items: ItemResult[];
+  queueNumber?: number | null;
+  pickupPeriod?: PickupPeriod | null;
 }
 
 interface PublicResultRow {
@@ -35,6 +42,7 @@ interface DisqualifiedPerson {
 interface ResultsData {
   generatedAt: string;
   seed: number;
+  pickupPeriods?: PickupPeriod[];
   results: Person[];
   disqualified: DisqualifiedPerson[];
 }
@@ -179,6 +187,26 @@ function SearchTab({ data }: { data: ResultsData }) {
               <p className="text-xs text-gray-400">{person.email}</p>
             </div>
           </div>
+
+          {person.queueNumber != null && (
+            <div className="bg-teal-50 border border-teal-200 rounded-xl p-4 flex items-center gap-4">
+              <div className="flex-shrink-0 w-14 h-14 rounded-full bg-teal-500 text-white flex flex-col items-center justify-center shadow-md">
+                <span className="text-xs font-semibold leading-none">คิวที่</span>
+                <span className="text-xl font-extrabold leading-none">{person.queueNumber}</span>
+              </div>
+              <div>
+                <p className="font-semibold text-teal-800 text-sm">คิวรับของของคุณ</p>
+                {person.pickupPeriod ? (
+                  <>
+                    <p className="text-teal-700 font-bold">{person.pickupPeriod.label}</p>
+                    <p className="text-xs text-teal-600">{person.pickupPeriod.time} น.</p>
+                  </>
+                ) : (
+                  <p className="text-xs text-teal-600">ยังไม่ระบุรอบรับของ</p>
+                )}
+              </div>
+            </div>
+          )}
 
           {person.items.length === 0 ? (
             <div className="bg-gray-50 rounded-xl p-4 text-center">

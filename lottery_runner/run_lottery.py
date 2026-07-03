@@ -80,7 +80,7 @@ def parse_args() -> argparse.Namespace:
 
 
 def load_config(config_file) -> dict:
-    defaults = {"max_wins_per_person": 2, "total_winners": None}
+    defaults = {"max_wins_per_person": 2, "total_winners": None, "pickup_periods": []}
     if not config_file:
         return defaults
     path = Path(config_file)
@@ -89,6 +89,26 @@ def load_config(config_file) -> dict:
     with path.open("r", encoding="utf-8") as f:
         data = json.load(f)
     return {**defaults, **data}
+
+
+def assign_queue(winner_emails: list, periods: list, rng: random.Random) -> dict:
+    """Return {email: {queueNumber, pickupPeriod}} for each winner, randomly ordered."""
+    shuffled = winner_emails[:]
+    rng.shuffle(shuffled)
+
+    period_map = []
+    for p in periods:
+        period_map.extend([p] * int(p.get("capacity", 0)))
+
+    result = {}
+    for i, email in enumerate(shuffled):
+        queue_num = i + 1
+        period = period_map[i] if i < len(period_map) else None
+        result[email] = {
+            "queueNumber": queue_num,
+            "pickupPeriod": {"label": period["label"], "time": period["time"]} if period else None,
+        }
+    return result
 
 
 def extract_item_name(column_name: str) -> str:
@@ -126,6 +146,7 @@ def main() -> None:
     config = load_config(BASE_DIR / args.config_file if args.config_file else None)
     max_wins = args.max_wins if args.max_wins is not None else config["max_wins_per_person"]
     total_winners = args.total_winners if args.total_winners is not None else config["total_winners"]
+    pickup_periods = config.get("pickup_periods", [])
 
     seed = args.seed if args.seed is not None else int(datetime.now().timestamp())
     rng = random.Random(seed)
@@ -308,16 +329,22 @@ def main() -> None:
 
     summary_path.write_text("\n".join(summary_lines) + "\n", encoding="utf-8")
 
+    # Assign queue numbers and pickup periods to winners
+    queue_assignments = assign_queue(sorted(unique_winner_emails), pickup_periods, rng)
+
     # Group wins per person
     wins_by_email: dict = {}
     for email, item, rank in assigned:
         if email not in wins_by_email:
             name, line_id = profile_by_email.get(email, ("", ""))
+            q = queue_assignments.get(email, {})
             wins_by_email[email] = {
                 "email": email,
                 "name": name,
                 "lineId": line_id,
                 "items": [],
+                "queueNumber": q.get("queueNumber"),
+                "pickupPeriod": q.get("pickupPeriod"),
             }
         wins_by_email[email]["items"].append({"item": item, "rank": rank})
 
@@ -330,6 +357,8 @@ def main() -> None:
                 "name": name,
                 "lineId": line_id,
                 "items": [],
+                "queueNumber": None,
+                "pickupPeriod": None,
             }
 
     people = sorted(wins_by_email.values(), key=lambda p: p["name"].lower())
@@ -338,6 +367,7 @@ def main() -> None:
     json_data = {
         "generatedAt": datetime.now().isoformat(),
         "seed": seed,
+        "pickupPeriods": pickup_periods,
         # Full raw data. Website handles masking at render time.
         "results": people,
         # Disqualified people (cheat flag or duplicate ranks)

@@ -1,4 +1,14 @@
 {
   "max_wins_per_person": 3,
-  "total_winners": 80
+  "total_winners": 80,
+  "pickup_periods": [
+    { "label": "รอบที่ 1", "time": "19:00–19:30", "capacity": 10 },
+    { "label": "รอบที่ 2", "time": "19:30–20:00", "capacity": 10 },
+    { "label": "รอบที่ 3", "time": "20:00–20:30", "capacity": 10 },
+    { "label": "รอบที่ 4", "time": "20:30–21:00", "capacity": 10 },
+    { "label": "รอบที่ 5", "time": "21:00–21:30", "capacity": 10 },
+    { "label": "รอบที่ 6", "time": "21:30–22:00", "capacity": 10 },
+    { "label": "รอบที่ 7", "time": "22:00–22:30", "capacity": 10 },
+    { "label": "รอบที่ 8", "time": "22:30–23:00", "capacity": 10 }
+  ]
 }
