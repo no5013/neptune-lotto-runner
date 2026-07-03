@@ -55,10 +55,21 @@ def parse_args() -> argparse.Namespace:
         ),
     )
     parser.add_argument(
+        "--config-file",
+        default="input/lottery_config.json",
+        help="JSON config file for lottery settings (default: input/lottery_config.json)",
+    )
+    parser.add_argument(
         "--max-wins",
         type=int,
-        default=2,
-        help="Maximum items each email can win",
+        default=None,
+        help="Maximum items each email can win (overrides config file)",
+    )
+    parser.add_argument(
+        "--total-winners",
+        type=int,
+        default=None,
+        help="Maximum number of unique people who can win anything (overrides config file)",
     )
     parser.add_argument(
         "--seed",
@@ -66,6 +77,18 @@ def parse_args() -> argparse.Namespace:
         help="Random seed for reproducible results",
     )
     return parser.parse_args()
+
+
+def load_config(config_file) -> dict:
+    defaults = {"max_wins_per_person": 2, "total_winners": None}
+    if not config_file:
+        return defaults
+    path = Path(config_file)
+    if not path.exists():
+        return defaults
+    with path.open("r", encoding="utf-8") as f:
+        data = json.load(f)
+    return {**defaults, **data}
 
 
 def extract_item_name(column_name: str) -> str:
@@ -99,6 +122,10 @@ def main() -> None:
 
     if not input_path.exists():
         raise FileNotFoundError(f"Input file not found: {input_path}")
+
+    config = load_config(BASE_DIR / args.config_file if args.config_file else None)
+    max_wins = args.max_wins if args.max_wins is not None else config["max_wins_per_person"]
+    total_winners = args.total_winners if args.total_winners is not None else config["total_winners"]
 
     seed = args.seed if args.seed is not None else int(datetime.now().timestamp())
     rng = random.Random(seed)
@@ -184,16 +211,23 @@ def main() -> None:
     assignments_by_item = Counter()
     assignments_by_rank = Counter()
     assigned_pairs = set()
+    unique_winner_emails: set = set()
 
     for rank in sorted(requests_by_rank):
         bucket = requests_by_rank[rank][:]
         rng.shuffle(bucket)
         for email, item, req_rank in bucket:
-            if assignments_by_email[email] >= args.max_wins:
+            if assignments_by_email[email] >= max_wins:
                 continue
             if assignments_by_item[item] >= capacities[item]:
                 continue
             if (email, item) in assigned_pairs:
+                continue
+            if (
+                total_winners is not None
+                and email not in unique_winner_emails
+                and len(unique_winner_emails) >= total_winners
+            ):
                 continue
 
             assigned.append((email, item, req_rank))
@@ -201,6 +235,7 @@ def main() -> None:
             assignments_by_item[item] += 1
             assignments_by_rank[req_rank] += 1
             assigned_pairs.add((email, item))
+            unique_winner_emails.add(email)
 
     unallocated = [
         req
@@ -219,7 +254,7 @@ def main() -> None:
         writer = csv.writer(f)
         writer.writerow(["Email", "Name", "LINE ID", "Item", "Requested Rank", "Reason"])
         full_items = {item for item, count in assignments_by_item.items() if count >= capacities[item]}
-        maxed_emails = {email for email, count in assignments_by_email.items() if count >= args.max_wins}
+        maxed_emails = {email for email, count in assignments_by_email.items() if count >= max_wins}
 
         for email, item, rank in sorted(unallocated, key=lambda x: (x[1], x[2], x[0])):
             name, line_id = profile_by_email.get(email, ("", ""))
@@ -235,13 +270,15 @@ def main() -> None:
         "===============",
         f"Input file: {input_path.resolve()}",
         f"Random seed: {seed}",
-        f"Max wins per email: {args.max_wins}",
+        f"Max wins per person: {max_wins}",
+        f"Total winners cap: {total_winners if total_winners is not None else 'unlimited'}",
         f"Default item capacity: {args.capacity}",
         "",
         f"Eligible unique emails: {len(eligible_emails)}",
         f"Skipped rows (CHEAT=Yes): {skipped_cheat_rows}",
         f"Skipped rows (duplicate ranks found): {skipped_duplicate_rank_rows}",
         f"Total eligible requests: {len(all_eligible_requests)}",
+        f"Unique winners: {len(unique_winner_emails)}",
         f"Total assignments: {len(assigned)}",
         f"Total unallocated requests: {len(unallocated)}",
         "",
@@ -261,8 +298,8 @@ def main() -> None:
         )
 
     summary_lines.append("")
-    summary_lines.append("Emails with 2 wins:")
-    two_wins = sorted([email for email, count in assignments_by_email.items() if count == args.max_wins])
+    summary_lines.append(f"Emails with {max_wins} wins:")
+    two_wins = sorted([email for email, count in assignments_by_email.items() if count == max_wins])
     if two_wins:
         for email in two_wins:
             summary_lines.append(f"- {email}")
