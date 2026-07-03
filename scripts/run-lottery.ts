@@ -14,7 +14,7 @@ import Papa from "papaparse";
 
 // ── Paths ──────────────────────────────────────────────────────────────────
 const SCRIPT_DIR = path.dirname(new URL(import.meta.url).pathname);
-const ROOT       = path.resolve(SCRIPT_DIR, "../..");
+const ROOT       = path.resolve(SCRIPT_DIR, "..");
 const INPUT_DIR  = path.join(ROOT, "input");
 const OUTPUT_DIR = path.join(ROOT, "output");
 

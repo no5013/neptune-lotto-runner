@@ -1,0 +1,28 @@
+{
+  "name": "neptune-lottery",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "// run":      "Full pipeline: lottery → publish to web → export Excel",
+    "run":         "tsx scripts/orchestrate.ts run",
+    "// publish":  "Copy latest results.json + event_config.json to lottery-result/public/data/",
+    "publish":     "tsx scripts/orchestrate.ts publish",
+    "// export":   "Generate winners Excel from latest (or --run <folder>) run",
+    "export":      "tsx scripts/orchestrate.ts export",
+    "// lottery":  "Run only the lottery algorithm (outputs to output/run_xxx/)",
+    "lottery":     "tsx scripts/run-lottery.ts",
+    "// dev":      "Start the Next.js dev server",
+    "dev":         "npm run dev --prefix lottery-result",
+    "// build":    "Build the Next.js app for production",
+    "build":       "npm run build --prefix lottery-result"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/papaparse": "^5.5.2",
+    "exceljs": "^4.4.0",
+    "papaparse": "^5.5.4",
+    "tsx": "^4.23.0",
+    "typescript": "^5"
+  }
+}

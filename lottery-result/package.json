@@ -6,10 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint",
-    "lottery": "tsx scripts/run-lottery.ts",
-    "export": "tsx scripts/export-winners.ts",
-    "orchestra": "tsx scripts/orchestrate.ts"
+    "lint": "eslint"
   },
   "dependencies": {
     "next": "16.2.9",
@@ -19,15 +16,11 @@
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
-    "@types/papaparse": "^5.5.2",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.9",
-    "exceljs": "^4.4.0",
-    "papaparse": "^5.5.4",
     "tailwindcss": "^4",
-    "tsx": "^4.23.0",
     "typescript": "^5"
   }
 }

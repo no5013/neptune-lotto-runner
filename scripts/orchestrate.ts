@@ -19,11 +19,11 @@ import path from "path";
 import { execFileSync } from "child_process";
 
 const SCRIPT_DIR = path.dirname(new URL(import.meta.url).pathname);
-const ROOT       = path.resolve(SCRIPT_DIR, "../..");
+const ROOT       = path.resolve(SCRIPT_DIR, "..");
 const OUTPUT_DIR = path.join(ROOT, "output");
 const INPUT_DIR  = path.join(ROOT, "input");
-const WEB_DATA   = path.join(SCRIPT_DIR, "../public/data");
-const WEB_DIR    = path.join(SCRIPT_DIR, "..");
+const WEB_DIR    = path.join(ROOT, "lottery-result");
+const WEB_DATA   = path.join(WEB_DIR, "public", "data");
 
 // ── Helpers ────────────────────────────────────────────────────────────────
 function section(title: string) {
@@ -31,7 +31,7 @@ function section(title: string) {
 }
 
 function npm(...args: string[]) {
-  execFileSync("npm", ["run", ...args], { cwd: WEB_DIR, stdio: "inherit" });
+  execFileSync("npm", ["run", ...args], { cwd: ROOT, stdio: "inherit" });
 }
 
 function latestRunDir(): string {
