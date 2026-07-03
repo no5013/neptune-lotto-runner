@@ -39,6 +39,12 @@ interface DisqualifiedPerson {
   disqualifiedReason: string;
 }
 
+interface EventConfig {
+  title: string;
+  subtitle: string;
+  date: string;
+}
+
 interface ResultsData {
   generatedAt: string;
   seed: number;
@@ -46,6 +52,8 @@ interface ResultsData {
   results: Person[];
   disqualified: DisqualifiedPerson[];
 }
+
+type ItemPrices = Record<string, number>;
 
 // ── Helpers ────────────────────────────────────────────────────────────────
 function Badge({ label, color = "teal" }: { label: string; color?: "teal" | "amber" | "red" }) {
@@ -61,7 +69,7 @@ function Badge({ label, color = "teal" }: { label: string; color?: "teal" | "amb
   );
 }
 
-function ItemCard({ item, rank }: { item: string; rank: number }) {
+function ItemCard({ item, rank, price }: { item: string; rank: number; price?: number }) {
   return (
     <div className="flex items-center gap-3 bg-white border border-teal-100 rounded-xl px-4 py-3 shadow-sm">
       <span className="text-2xl">🎁</span>
@@ -69,6 +77,11 @@ function ItemCard({ item, rank }: { item: string; rank: number }) {
         <p className="font-semibold text-gray-800 truncate">{item}</p>
         <p className="text-xs text-gray-400">อันดับที่ {rank} ของคุณ</p>
       </div>
+      {price != null && (
+        <span className="text-sm font-semibold text-teal-700 shrink-0">
+          ฿{price.toLocaleString()}
+        </span>
+      )}
     </div>
   );
 }
@@ -86,33 +99,46 @@ function maskEmail(email: string) {
 }
 
 // ── Search Tab ─────────────────────────────────────────────────────────────
-function SearchTab({ data }: { data: ResultsData }) {
+function SearchTab({ data, prices }: { data: ResultsData; prices: ItemPrices }) {
   const [query, setQuery] = useState("");
   const [result, setResult] = useState<Person | DisqualifiedPerson | null | "not-found">(null);
   const [isDisqualified, setIsDisqualified] = useState(false);
+  const [matchedByLineId, setMatchedByLineId] = useState(false);
+
+  function isLineIdMatch(p: { lineId: string }, q: string) {
+    return (
+      p.lineId.toLowerCase() === q ||
+      p.lineId.toLowerCase().replace(/^@/, "") === q.replace(/^@/, "")
+    );
+  }
 
   function handleSearch() {
     const q = query.trim().toLowerCase();
     if (!q) return;
 
     const found = data.results.find(
-      (p) =>
-        p.email.toLowerCase() === q ||
-        p.lineId.toLowerCase() === q ||
-        p.lineId.toLowerCase().replace(/^@/, "") === q.replace(/^@/, "")
+      (p) => p.email.toLowerCase() === q || isLineIdMatch(p, q)
     );
-    if (found) { setResult(found); setIsDisqualified(false); return; }
+    if (found) {
+      setResult(found);
+      setIsDisqualified(false);
+      setMatchedByLineId(isLineIdMatch(found, q));
+      return;
+    }
 
     const dq = data.disqualified?.find(
-      (p) =>
-        p.email.toLowerCase() === q ||
-        p.lineId.toLowerCase() === q ||
-        p.lineId.toLowerCase().replace(/^@/, "") === q.replace(/^@/, "")
+      (p) => p.email.toLowerCase() === q || isLineIdMatch(p, q)
     );
-    if (dq) { setResult(dq); setIsDisqualified(true); return; }
+    if (dq) {
+      setResult(dq);
+      setIsDisqualified(true);
+      setMatchedByLineId(isLineIdMatch(dq, q));
+      return;
+    }
 
     setResult("not-found");
     setIsDisqualified(false);
+    setMatchedByLineId(false);
   }
 
   function handleKeyDown(e: React.KeyboardEvent) {
@@ -221,8 +247,21 @@ function SearchTab({ data }: { data: ResultsData }) {
                 <Badge label={`${person.items.length} ชิ้น`} color="teal" />
               </div>
               {person.items.map((r, i) => (
-                <ItemCard key={i} item={r.item} rank={r.rank} />
+                <ItemCard
+                  key={i}
+                  item={r.item}
+                  rank={r.rank}
+                  price={matchedByLineId ? (prices[r.item] ?? 0) : undefined}
+                />
               ))}
+              {matchedByLineId && (
+                <div className="flex items-center justify-between bg-teal-500 text-white rounded-xl px-4 py-3 mt-1">
+                  <span className="font-semibold text-sm">ยอดรวมทั้งหมด</span>
+                  <span className="font-extrabold text-lg">
+                    ฿{person.items.reduce((sum, r) => sum + (prices[r.item] ?? 0), 0).toLocaleString()}
+                  </span>
+                </div>
+              )}
             </div>
           )}
         </div>
@@ -353,6 +392,8 @@ function AllResultsTab({ data }: { data: ResultsData }) {
 export default function Home() {
   const [tab, setTab] = useState<"search" | "all">("search");
   const [data, setData] = useState<ResultsData | null>(null);
+  const [event, setEvent] = useState<EventConfig | null>(null);
+  const [prices, setPrices] = useState<ItemPrices>({});
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
@@ -360,6 +401,14 @@ export default function Home() {
       .then((r) => r.json())
       .then(setData)
       .catch(() => setError("ไม่สามารถโหลดข้อมูลได้"));
+    fetch("/event_config.json")
+      .then((r) => r.json())
+      .then(setEvent)
+      .catch(() => {});
+    fetch("/item_prices.json")
+      .then((r) => r.json())
+      .then(setPrices)
+      .catch(() => {});
   }, []);
 
   return (
@@ -375,8 +424,11 @@ export default function Home() {
             className="rounded-full border-4 border-white shadow-lg object-cover"
           />
         </div>
-        <h1 className="text-2xl font-extrabold tracking-tight">Neptune Lottery (รอบวันเสาร์ที่ 13 มิ.ย.)</h1>
-        <p className="text-sm text-teal-50 mt-1">เช็คผลสุ่มที่นี่เลย! 🎁</p>
+        <h1 className="text-2xl font-extrabold tracking-tight">
+          {event?.title ?? "Neptune Lottery"}
+          {event?.date ? ` (${event.date})` : ""}
+        </h1>
+        <p className="text-sm text-teal-50 mt-1">{event?.subtitle ?? "เช็คผลสุ่มที่นี่เลย! 🎁"}</p>
       </div>
 
       <div className="flex justify-center mt-6 px-4">
@@ -404,7 +456,7 @@ export default function Home() {
         {!data && !error && (
           <p className="text-center text-gray-400 mt-10 animate-pulse">รอแป๊บนึงนะ... 🌊</p>
         )}
-        {data && tab === "search" && <SearchTab data={data} />}
+        {data && tab === "search" && <SearchTab data={data} prices={prices} />}
         {data && tab === "all" && <AllResultsTab data={data} />}
       </main>
     </div>
