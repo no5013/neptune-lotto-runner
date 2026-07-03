@@ -48,12 +48,11 @@ interface EventConfig {
 interface ResultsData {
   generatedAt: string;
   seed: number;
+  prices?: Record<string, number>;
   pickupPeriods?: PickupPeriod[];
   results: Person[];
   disqualified: DisqualifiedPerson[];
 }
-
-type ItemPrices = Record<string, number>;
 
 // ── Helpers ────────────────────────────────────────────────────────────────
 function Badge({ label, color = "teal" }: { label: string; color?: "teal" | "amber" | "red" }) {
@@ -99,7 +98,8 @@ function maskEmail(email: string) {
 }
 
 // ── Search Tab ─────────────────────────────────────────────────────────────
-function SearchTab({ data, prices }: { data: ResultsData; prices: ItemPrices }) {
+function SearchTab({ data }: { data: ResultsData }) {
+  const prices = data.prices ?? {};
   const [query, setQuery] = useState("");
   const [result, setResult] = useState<Person | DisqualifiedPerson | null | "not-found">(null);
   const [isDisqualified, setIsDisqualified] = useState(false);
@@ -393,21 +393,16 @@ export default function Home() {
   const [tab, setTab] = useState<"search" | "all">("search");
   const [data, setData] = useState<ResultsData | null>(null);
   const [event, setEvent] = useState<EventConfig | null>(null);
-  const [prices, setPrices] = useState<ItemPrices>({});
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch("/results.json")
+    fetch("/data/results.json")
       .then((r) => r.json())
       .then(setData)
       .catch(() => setError("ไม่สามารถโหลดข้อมูลได้"));
-    fetch("/event_config.json")
+    fetch("/data/event_config.json")
       .then((r) => r.json())
       .then(setEvent)
-      .catch(() => {});
-    fetch("/item_prices.json")
-      .then((r) => r.json())
-      .then(setPrices)
       .catch(() => {});
   }, []);
 
@@ -456,7 +451,7 @@ export default function Home() {
         {!data && !error && (
           <p className="text-center text-gray-400 mt-10 animate-pulse">รอแป๊บนึงนะ... 🌊</p>
         )}
-        {data && tab === "search" && <SearchTab data={data} prices={prices} />}
+        {data && tab === "search" && <SearchTab data={data} />}
         {data && tab === "all" && <AllResultsTab data={data} />}
       </main>
     </div>

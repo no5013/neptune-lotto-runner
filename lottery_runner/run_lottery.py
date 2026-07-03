@@ -29,8 +29,8 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--input",
-        default="input/form-submissions.csv",
-        help="Input form CSV file (default: input/form-submissions.csv)",
+        default="../input/form-submissions.csv",
+        help="Input form CSV file (default: ../input/form-submissions.csv)",
     )
     parser.add_argument(
         "--output-dir",
@@ -48,16 +48,17 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--capacity-file",
-        default="input/item_capacities.json",
+        default="../input/items.json",
         help=(
-            "JSON file mapping item name to capacity "
-            '(default: input/item_capacities.json)'
+            "JSON file mapping item name to capacity/price. "
+            "Accepts { item: capacity } or { item: { capacity, price } }. "
+            "(default: ../input/items.json)"
         ),
     )
     parser.add_argument(
         "--config-file",
-        default="input/lottery_config.json",
-        help="JSON config file for lottery settings (default: input/lottery_config.json)",
+        default="../input/event_config.json",
+        help="JSON config file for lottery settings (default: ../input/event_config.json)",
     )
     parser.add_argument(
         "--max-wins",
@@ -125,15 +126,27 @@ def parse_rank(value: str):
     return int(match.group(1))
 
 
-def load_capacities(item_names, default_capacity: int, capacity_file: str):
+def load_items_file(capacity_file: str, item_names: list, default_capacity: int):
+    """Load items file. Returns (capacities, prices).
+
+    Supports two formats:
+      { "item": capacity }                        ← legacy
+      { "item": { "capacity": N, "price": N } }   ← merged format
+    """
     capacities = {item: default_capacity for item in item_names}
+    prices: dict = {}
     if capacity_file:
         with open(capacity_file, "r", encoding="utf-8") as f:
-            overrides = json.load(f)
-        for item, cap in overrides.items():
-            if item in capacities:
-                capacities[item] = int(cap)
-    return capacities
+            raw = json.load(f)
+        for item, val in raw.items():
+            if isinstance(val, dict):
+                if item in capacities:
+                    capacities[item] = int(val.get("capacity", default_capacity))
+                prices[item] = val.get("price", 0)
+            else:
+                if item in capacities:
+                    capacities[item] = int(val)
+    return capacities, prices
 
 
 def main() -> None:
@@ -169,7 +182,11 @@ def main() -> None:
 
         item_by_column = {col: extract_item_name(col) for col in ranking_columns}
         item_names = [item_by_column[c] for c in ranking_columns]
-        capacities = load_capacities(item_names, args.capacity, BASE_DIR / args.capacity_file if args.capacity_file else None)
+        capacities, item_prices = load_items_file(
+            str(BASE_DIR / args.capacity_file) if args.capacity_file else None,
+            item_names,
+            args.capacity,
+        )
 
         requests_by_rank = defaultdict(list)
         all_eligible_requests = []
@@ -367,6 +384,7 @@ def main() -> None:
     json_data = {
         "generatedAt": datetime.now().isoformat(),
         "seed": seed,
+        "prices": item_prices,
         "pickupPeriods": pickup_periods,
         # Full raw data. Website handles masking at render time.
         "results": people,

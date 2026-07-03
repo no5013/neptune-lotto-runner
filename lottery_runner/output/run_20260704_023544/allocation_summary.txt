@@ -1,0 +1,120 @@
+Lottery Summary
+===============
+Input file: /Users/pongsakorn.somsri/workspaces/Neptune/RankingRandom/lottery_runner/input/form-submissions.csv
+Random seed: 1783107344
+Max wins per person: 3
+Total winners cap: 80
+Default item capacity: 20
+
+Eligible unique emails: 218
+Skipped rows (CHEAT=Yes): 0
+Skipped rows (duplicate ranks found): 21
+Total eligible requests: 1513
+Unique winners: 80
+Total assignments: 228
+Total unallocated requests: 1285
+
+Assignments by rank:
+- Rank 1: 80 assigned / 218 requests
+- Rank 2: 60 assigned / 214 requests
+- Rank 3: 56 assigned / 201 requests
+- Rank 4: 17 assigned / 195 requests
+- Rank 5: 9 assigned / 184 requests
+- Rank 6: 1 assigned / 172 requests
+- Rank 7: 4 assigned / 167 requests
+- Rank 8: 1 assigned / 162 requests
+
+Assignments by item:
+- กล้วยหั่น: 2 / 15
+- คุกกี้ครีมแลบลิ้น: 3 / 80
+- ชีสเบอร์เกอร์ฮิปโป: 5 / 5
+- ถุงกระดาษ: 3 / 5
+- ทาโกะ กุ้ง: 15 / 15
+- ทาโกะ ชีส: 15 / 15
+- ทาโกะ หมึก: 15 / 15
+- ปลาบล็อบ: 10 / 10
+- มันเชฟจมูกแดง ปัง: 5 / 5
+- มาการอง: 1 / 25
+- รองเท้าจมูกแดง อ่อน: 3 / 5
+- รองเท้าจมูกแดง เข้ม: 5 / 5
+- เค้กดอกไม้: 28 / 50
+- เซ็ตคัพเค้กจมูกแดง: 36 / 50
+- เซ็ตถุงกับกล่อง: 5 / 5
+- เซ็ตพุทราแลบลิ้น: 11 / 50
+- เซ็ตสตรอว์เบอร์รี่จมูกแดง: 55 / 80
+- เนยก้อน ช็อก: 2 / 25
+- เนยก้อน เหลือง: 2 / 25
+- เปาฮิปโป ชมพู: 7 / 7
+
+Emails with 3 wins:
+- 39465@sjc.ac.th
+- 69100115@kmitl.ac.th
+- ainthirat255115@gmail.com
+- ananya.k1214@gmail.com
+- atom.ozone.24@gmail.com
+- badpizza22@gmail.com
+- bam23082552@gmail.com
+- belgiumtmp@gmail.com
+- bmzbyuq@gmail.com
+- boots.stationbytanthai@gmail.com
+- cap.kawintida@gmail.com
+- cherrywbacon@gmail.com
+- ciiin.ciinema@gmail.com
+- cybergt66@gmail.com
+- drpck1996@gmail.com
+- evepakji@gmail.com
+- g.of.grace123@gmail.com
+- giftdentcu@gmail.com
+- guzza2548@gmail.com
+- hibarigodji@gmail.com
+- imyyan25@gmail.com
+- ingtmqxx7@gmail.com
+- iphonemind.172546@gmail.com
+- jkawatt@gmail.com
+- job12q@gmail.com
+- jobkjob123@gmail.com
+- jomerubayrilz@gmail.com
+- kankanit.ket@gmail.com
+- kanyarat271206@gmail.com
+- karnmaneerangsiyanon@gmail.com
+- kenjirokane@gmail.com
+- khateuxncinthphr@gmail.com
+- krittiyachum@gmail.com
+- kulisara.sri@gmail.com
+- kwangdonlaporn@gmail.com
+- lastkommyzang@gmail.com
+- marble.mm28@gmail.com
+- markwisut2546@gmail.com
+- marshmallo315@gmail.com
+- milkkeylotion.27@gmail.com
+- minnmornor@gmail.com
+- mormewzz@gmail.com
+- nanipaum@gmail.com
+- naphatsakornamrarong@gmail.com
+- natsitronjajah@gmail.com
+- nattawat.5897@gmail.com
+- nawaphornkuil@gmail.com
+- newchean.poe@gmail.com
+- nice1014sureeporn@gmail.com
+- p.natheera@gmail.com
+- patama.ts01@gmail.com
+- patlapa.miw.34@gmail.com
+- pew2539.jp@gmail.com
+- pimjutha2529@gmail.com
+- pimyadapoonsawat@gmail.com
+- pitchayanoey560@gmail.com
+- pongsakorns@gmail.com
+- pphitphit.4111@gmail.com
+- pream1792546@gmail.com
+- ptyd46399@gmail.com
+- pupyou43453@gmail.com
+- s67528302022@ssru.ac.th
+- sirapop.tk@gmail.com
+- sornusa23@gmail.com
+- terapat.p@ku.th
+- waridsaralekwong@gmail.com
+- warunyaxsai@gmail.com
+- wmenhkf92hmidu8@gmail.com
+- worakanmilk110744@gmail.com
+- workwithnksrt@gmail.com
+- zxzearth123@gmail.com
