@@ -4,18 +4,12 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "// draw":       "Full pipeline: lottery → publish to web → export Excel",
-    "draw":          "tsx scripts/orchestrate.ts run",
-    "// draw:only":  "Run only the lottery algorithm (outputs to output/run_xxx/)",
-    "draw:only":     "tsx scripts/run-lottery.ts",
-    "// publish":    "Copy latest results.json + event_config.json to lottery-result/public/data/",
-    "publish":       "tsx scripts/orchestrate.ts publish",
-    "// excel":      "Generate winners Excel from latest (or --run <folder>) run",
-    "excel":         "tsx scripts/orchestrate.ts export",
-    "// dev":        "Start the Next.js dev server",
-    "dev":           "npm run dev --prefix lottery-result",
-    "// build":      "Build the Next.js app for production",
-    "build":         "npm run build --prefix lottery-result"
+    "// draw":  "Full pipeline: lottery → publish to web → export Excel",
+    "draw":     "tsx scripts/orchestrate.ts run",
+    "// dev":   "Start the Next.js dev server",
+    "dev":      "npm run dev --prefix lottery-result",
+    "// build": "Build the Next.js app for production",
+    "build":    "npm run build --prefix lottery-result"
   },
   "devDependencies": {
     "@types/node": "^20",
