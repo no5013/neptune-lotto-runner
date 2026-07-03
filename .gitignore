@@ -1,3 +1,28 @@
-.DS_Store
+# Dependencies
+node_modules/
 lottery-result/node_modules/
+
+# Generated run outputs — ephemeral, not source-controlled
+output/
+
+# Excel exports
+*.xlsx
+
+# Next.js
 lottery-result/.next/
+lottery-result/out/
+lottery-result/next-env.d.ts
+
+# TypeScript build info
+*.tsbuildinfo
+
+# macOS
+.DS_Store
+
+# Environment
+.env
+.env.local
+.env*.local
+
+# Vercel
+.vercel
