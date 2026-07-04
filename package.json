@@ -4,8 +4,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "// draw":  "Full pipeline: lottery → publish to web → export Excel",
-    "draw":     "tsx scripts/orchestrate.ts run",
+    "// draw":   "Full pipeline: lottery → publish to web → export Excel",
+    "draw":      "tsx scripts/orchestrate.ts run",
+    "// verify": "Verify latest run complies with all lottery rules",
+    "verify":    "tsx scripts/verify.ts",
     "// dev":   "Start the Next.js dev server",
     "dev":      "npm run dev --prefix lottery-result",
     "// build": "Build the Next.js app for production",
