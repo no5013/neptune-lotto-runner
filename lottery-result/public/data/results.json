@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-03T20:34:45.087Z",
-  "seed": 1783110885068,
+  "generatedAt": "2026-07-04T05:01:27.517Z",
+  "seed": 1783141287497,
   "prices": {
     "เค้กดอกไม้": 230,
     "เซ็ตพุทราแลบลิ้น": 250,
@@ -62,14 +62,54 @@
       "email": "natsitronjajah@gmail.com",
       "name": "Aimer",
       "lineId": "Natsijj17",
-      "items": [],
-      "queueNumber": null,
-      "pickupPeriod": null
+      "items": [
+        {
+          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
+          "rank": 1
+        },
+        {
+          "item": "เซ็ตคัพเค้กจมูกแดง",
+          "rank": 2
+        },
+        {
+          "item": "เซ็ตพุทราแลบลิ้น",
+          "rank": 4
+        }
+      ],
+      "queueNumber": 41,
+      "pickupPeriod": {
+        "label": "รอบที่ 5",
+        "time": "21:00–21:30"
+      }
     },
     {
       "email": "c370hssv@gmail.com",
       "name": "Aki",
       "lineId": "Impolitegirl",
+      "items": [
+        {
+          "item": "เค้กดอกไม้",
+          "rank": 1
+        },
+        {
+          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
+          "rank": 2
+        },
+        {
+          "item": "เซ็ตคัพเค้กจมูกแดง",
+          "rank": 3
+        }
+      ],
+      "queueNumber": 85,
+      "pickupPeriod": {
+        "label": "รอบที่ 8",
+        "time": "22:30–23:00"
+      }
+    },
+    {
+      "email": "warissara.pholbunnamlarp@gmail.com",
+      "name": "Ann",
+      "lineId": "anny0823212707",
       "items": [],
       "queueNumber": null,
       "pickupPeriod": null
@@ -86,9 +126,21 @@
       "email": "annie.ttw@gmail.com",
       "name": "annie",
       "lineId": "natraphat.annie",
-      "items": [],
-      "queueNumber": null,
-      "pickupPeriod": null
+      "items": [
+        {
+          "item": "รองเท้าจมูกแดง อ่อน",
+          "rank": 1
+        },
+        {
+          "item": "เซ็ตคัพเค้กจมูกแดง",
+          "rank": 2
+        }
+      ],
+      "queueNumber": 48,
+      "pickupPeriod": {
+        "label": "รอบที่ 5",
+        "time": "21:00–21:30"
+      }
     },
     {
       "email": "arm.ideal@gmail.com",
@@ -98,12 +150,20 @@
         {
           "item": "ปลาบล็อบ",
           "rank": 1
+        },
+        {
+          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
+          "rank": 4
+        },
+        {
+          "item": "กล้วยหั่น",
+          "rank": 5
         }
       ],
-      "queueNumber": 45,
+      "queueNumber": 79,
       "pickupPeriod": {
-        "label": "รอบที่ 5",
-        "time": "21:00–21:30"
+        "label": "รอบที่ 7",
+        "time": "22:00–22:30"
       }
     },
     {
@@ -142,61 +202,101 @@
         {
           "item": "ทาโกะ กุ้ง",
           "rank": 2
-        },
-        {
-          "item": "ทาโกะ ชีส",
-          "rank": 3
         }
       ],
-      "queueNumber": 37,
+      "queueNumber": 18,
       "pickupPeriod": {
-        "label": "รอบที่ 4",
-        "time": "20:30–21:00"
+        "label": "รอบที่ 2",
+        "time": "19:30–20:00"
+      }
+    },
+    {
+      "email": "bammybmm@gmail.com",
+      "name": "Bammy",
+      "lineId": "Kbmmmy",
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
+    },
+    {
+      "email": "hoshinoailoveyou4510@gmail.com",
+      "name": "Beam",
+      "lineId": "0802011093",
+      "items": [
+        {
+          "item": "มันเชฟจมูกแดง ปัง",
+          "rank": 1
+        },
+        {
+          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
+          "rank": 2
+        },
+        {
+          "item": "เซ็ตคัพเค้กจมูกแดง",
+          "rank": 6
+        }
+      ],
+      "queueNumber": 54,
+      "pickupPeriod": {
+        "label": "รอบที่ 6",
+        "time": "21:30–22:00"
       }
     },
     {
       "email": "salisa.pipat@gmail.com",
       "name": "Bearbam",
       "lineId": "btaemin",
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
+    },
+    {
+      "email": "aphisarakajonwasin@gmail.com",
+      "name": "Bolling",
+      "lineId": "Pbooswt",
       "items": [
         {
           "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
           "rank": 1
         },
         {
-          "item": "กล้วยหั่น",
-          "rank": 2
+          "item": "เซ็ตคัพเค้กจมูกแดง",
+          "rank": 3
+        },
+        {
+          "item": "เนยก้อน เหลือง",
+          "rank": 5
         }
       ],
-      "queueNumber": 66,
+      "queueNumber": 89,
       "pickupPeriod": {
-        "label": "รอบที่ 7",
-        "time": "22:00–22:30"
+        "label": "รอบที่ 8",
+        "time": "22:30–23:00"
       }
     },
     {
       "email": "bellasuphicha@gmail.com",
       "name": "borbor",
       "lineId": "bellsuphicha2548",
-      "items": [
-        {
-          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
-          "rank": 1
-        },
-        {
-          "item": "ทาโกะ หมึก",
-          "rank": 2
-        },
-        {
-          "item": "เปาฮิปโป ชมพู",
-          "rank": 4
-        }
-      ],
-      "queueNumber": 33,
-      "pickupPeriod": {
-        "label": "รอบที่ 4",
-        "time": "20:30–21:00"
-      }
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
+    },
+    {
+      "email": "chalintorn.poon@gmail.com",
+      "name": "Bow",
+      "lineId": "bbbowling.",
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
+    },
+    {
+      "email": "mammotzxc01@gmail.com",
+      "name": "Bow",
+      "lineId": "sptchub",
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
     },
     {
       "email": "ciiin.ciinema@gmail.com",
@@ -210,25 +310,17 @@
       "email": "naphatsakornamrarong@gmail.com",
       "name": "Dm",
       "lineId": "dreamka5555",
-      "items": [
-        {
-          "item": "ทาโกะ กุ้ง",
-          "rank": 1
-        },
-        {
-          "item": "เซ็ตพุทราแลบลิ้น",
-          "rank": 2
-        },
-        {
-          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
-          "rank": 3
-        }
-      ],
-      "queueNumber": 78,
-      "pickupPeriod": {
-        "label": "รอบที่ 8",
-        "time": "22:30–23:00"
-      }
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
+    },
+    {
+      "email": "visawa.u@gmail.com",
+      "name": "Donut15",
+      "lineId": "Saimaiuss",
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
     },
     {
       "email": "pirayasahathanaphon@gmail.com",
@@ -255,6 +347,14 @@
       "pickupPeriod": null
     },
     {
+      "email": "natcha.muangpum@gmail.com",
+      "name": "gound",
+      "lineId": "gound",
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
+    },
+    {
       "email": "natbabyg11@gmail.com",
       "name": "HADES",
       "lineId": "natbabyg",
@@ -266,9 +366,25 @@
       "email": "hansa151051@gmail.com",
       "name": "Hansa",
       "lineId": "s-u-p-h-a-n-s-a",
-      "items": [],
-      "queueNumber": null,
-      "pickupPeriod": null
+      "items": [
+        {
+          "item": "เค้กดอกไม้",
+          "rank": 1
+        },
+        {
+          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
+          "rank": 2
+        },
+        {
+          "item": "เซ็ตคัพเค้กจมูกแดง",
+          "rank": 3
+        }
+      ],
+      "queueNumber": 94,
+      "pickupPeriod": {
+        "label": "รอบที่ 8",
+        "time": "22:30–23:00"
+      }
     },
     {
       "email": "abinter86557@gmail.com",
@@ -282,30 +398,30 @@
       "email": "icespsbtwp@gmail.com",
       "name": "Ice",
       "lineId": "qwdeci",
-      "items": [
-        {
-          "item": "เค้กดอกไม้",
-          "rank": 1
-        },
-        {
-          "item": "ชีสเบอร์เกอร์ฮิปโป",
-          "rank": 2
-        },
-        {
-          "item": "ทาโกะ ชีส",
-          "rank": 4
-        }
-      ],
-      "queueNumber": 63,
-      "pickupPeriod": {
-        "label": "รอบที่ 7",
-        "time": "22:00–22:30"
-      }
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
+    },
+    {
+      "email": "aphicha.ice@gmail.com",
+      "name": "iceAphicha",
+      "lineId": "iamiceaphicha",
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
     },
     {
       "email": "bell1155@hotmail.com",
       "name": "Ing",
       "lineId": "bell_ink",
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
+    },
+    {
+      "email": "jakkritd23@gmail.com",
+      "name": "Jakkrit",
+      "lineId": "chaoun23",
       "items": [],
       "queueNumber": null,
       "pickupPeriod": null
@@ -319,76 +435,68 @@
       "pickupPeriod": null
     },
     {
-      "email": "wun.jick@gmail.com",
-      "name": "Jiick",
-      "lineId": "Jiick",
+      "email": "kawisara28345@gmail.com",
+      "name": "Jelly",
+      "lineId": "pqwvkk",
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
+    },
+    {
+      "email": "dbrhjwns@gmail.com",
+      "name": "Jeneve",
+      "lineId": "Wenkuu",
       "items": [
         {
-          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
+          "item": "ทาโกะ ชีส",
           "rank": 1
         },
         {
-          "item": "เซ็ตคัพเค้กจมูกแดง",
-          "rank": 3
+          "item": "ทาโกะ กุ้ง",
+          "rank": 2
         },
         {
-          "item": "เซ็ตพุทราแลบลิ้น",
-          "rank": 4
+          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
+          "rank": 5
         }
       ],
-      "queueNumber": 2,
+      "queueNumber": 11,
       "pickupPeriod": {
-        "label": "รอบที่ 1",
-        "time": "19:00–19:30"
+        "label": "รอบที่ 2",
+        "time": "19:30–20:00"
       }
     },
     {
-      "email": "jobkjob123@gmail.com",
-      "name": "Job",
-      "lineId": "Jobwoy",
-      "items": [
-        {
-          "item": "เปาฮิปโป ชมพู",
-          "rank": 1
-        },
-        {
-          "item": "เซ็ตคัพเค้กจมูกแดง",
-          "rank": 3
-        },
-        {
-          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
-          "rank": 4
-        }
-      ],
-      "queueNumber": 34,
-      "pickupPeriod": {
-        "label": "รอบที่ 4",
-        "time": "20:30–21:00"
-      }
+      "email": "wun.jick@gmail.com",
+      "name": "Jiick",
+      "lineId": "Jiick",
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
+    },
+    {
+      "email": "nchotwong@gmail.com",
+      "name": "Jk",
+      "lineId": "0948105552lek",
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
     },
     {
       "email": "job12q@gmail.com",
       "name": "Job",
       "lineId": "jobpa00234",
-      "items": [
-        {
-          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
-          "rank": 1
-        },
-        {
-          "item": "เซ็ตคัพเค้กจมูกแดง",
-          "rank": 2
-        },
-        {
-          "item": "เค้กดอกไม้",
-          "rank": 3
-        }
-      ],
-      "queueNumber": 10,
-      "pickupPeriod": {
-        "label": "รอบที่ 1",
-        "time": "19:00–19:30"
-      }
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
+    },
+    {
+      "email": "jobkjob123@gmail.com",
+      "name": "Job",
+      "lineId": "Jobwoy",
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
     },
     {
       "email": "badpizza22@gmail.com",
@@ -408,35 +516,19 @@
           "rank": 3
         }
       ],
-      "queueNumber": 75,
+      "queueNumber": 20,
       "pickupPeriod": {
-        "label": "รอบที่ 8",
-        "time": "22:30–23:00"
+        "label": "รอบที่ 2",
+        "time": "19:30–20:00"
       }
     },
     {
       "email": "pn113jutamat@gmail.com",
       "name": "June29",
       "lineId": "gene110957",
-      "items": [
-        {
-          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
-          "rank": 1
-        },
-        {
-          "item": "ปลาบล็อบ",
-          "rank": 2
-        },
-        {
-          "item": "เค้กดอกไม้",
-          "rank": 3
-        }
-      ],
-      "queueNumber": 19,
-      "pickupPeriod": {
-        "label": "รอบที่ 2",
-        "time": "19:30–20:00"
-      }
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
     },
     {
       "email": "kenjirokane@gmail.com",
@@ -456,16 +548,24 @@
           "rank": 3
         }
       ],
-      "queueNumber": 15,
+      "queueNumber": 42,
       "pickupPeriod": {
-        "label": "รอบที่ 2",
-        "time": "19:30–20:00"
+        "label": "รอบที่ 5",
+        "time": "21:00–21:30"
       }
     },
     {
       "email": "kimjungpack@gmail.com",
       "name": "Kim",
       "lineId": "alicetoys",
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
+    },
+    {
+      "email": "sura.prap@gmail.com",
+      "name": "kim",
+      "lineId": "kimp123",
       "items": [],
       "queueNumber": null,
       "pickupPeriod": null
@@ -487,36 +587,68 @@
       "pickupPeriod": null
     },
     {
-      "email": "pinyapat.wrn@gmail.com",
-      "name": "maimaies",
-      "lineId": "mai1.1.45",
+      "email": "lek1005@gmail.com",
+      "name": "Lek",
+      "lineId": "0961654459",
       "items": [],
       "queueNumber": null,
       "pickupPeriod": null
     },
     {
-      "email": "cake.asmr99@gmail.com",
-      "name": "Mameaw",
-      "lineId": "Milkkey27639",
+      "email": "veerakarn.pg@gmail.com",
+      "name": "lhinglhing",
+      "lineId": "kittynails",
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
+    },
+    {
+      "email": "chumpol.ma01@gmail.com",
+      "name": "Mai_Chumpol",
+      "lineId": "mai_chumpol",
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
+    },
+    {
+      "email": "pinyapat.wrn@gmail.com",
+      "name": "maimaies",
+      "lineId": "mai1.1.45",
       "items": [
         {
-          "item": "เค้กดอกไม้",
+          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
           "rank": 1
         },
         {
-          "item": "ทาโกะ กุ้ง",
+          "item": "เซ็ตคัพเค้กจมูกแดง",
           "rank": 2
         },
         {
-          "item": "กล้วยหั่น",
-          "rank": 3
+          "item": "เซ็ตพุทราแลบลิ้น",
+          "rank": 6
         }
       ],
-      "queueNumber": 68,
+      "queueNumber": 44,
       "pickupPeriod": {
-        "label": "รอบที่ 7",
-        "time": "22:00–22:30"
+        "label": "รอบที่ 5",
+        "time": "21:00–21:30"
       }
+    },
+    {
+      "email": "cake.asmr99@gmail.com",
+      "name": "Mameaw",
+      "lineId": "Milkkey27639",
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
+    },
+    {
+      "email": "mammot41038@gmail.com",
+      "name": "Mammoth",
+      "lineId": "boonyaritmot",
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
     },
     {
       "email": "iphonemind.172546@gmail.com",
@@ -536,7 +668,7 @@
           "rank": 3
         }
       ],
-      "queueNumber": 53,
+      "queueNumber": 59,
       "pickupPeriod": {
         "label": "รอบที่ 6",
         "time": "21:30–22:00"
@@ -546,41 +678,57 @@
       "email": "marble.mm28@gmail.com",
       "name": "Marble",
       "lineId": "mmarble",
-      "items": [
-        {
-          "item": "ชีสเบอร์เกอร์ฮิปโป",
-          "rank": 1
-        },
-        {
-          "item": "เปาฮิปโป ชมพู",
-          "rank": 2
-        },
-        {
-          "item": "เค้กดอกไม้",
-          "rank": 3
-        }
-      ],
-      "queueNumber": 61,
-      "pickupPeriod": {
-        "label": "รอบที่ 7",
-        "time": "22:00–22:30"
-      }
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
     },
     {
       "email": "markwisut2546@gmail.com",
       "name": "Mark",
       "lineId": "markoomm",
-      "items": [],
-      "queueNumber": null,
-      "pickupPeriod": null
+      "items": [
+        {
+          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
+          "rank": 1
+        },
+        {
+          "item": "เซ็ตคัพเค้กจมูกแดง",
+          "rank": 2
+        },
+        {
+          "item": "รองเท้าจมูกแดง เข้ม",
+          "rank": 3
+        }
+      ],
+      "queueNumber": 26,
+      "pickupPeriod": {
+        "label": "รอบที่ 3",
+        "time": "20:00–20:30"
+      }
     },
     {
       "email": "marshmallo315@gmail.com",
       "name": "Marshmallo3",
       "lineId": "Marshmallo3",
-      "items": [],
-      "queueNumber": null,
-      "pickupPeriod": null
+      "items": [
+        {
+          "item": "ทาโกะ ชีส",
+          "rank": 1
+        },
+        {
+          "item": "ทาโกะ หมึก",
+          "rank": 2
+        },
+        {
+          "item": "คุกกี้ครีมแลบลิ้น",
+          "rank": 5
+        }
+      ],
+      "queueNumber": 32,
+      "pickupPeriod": {
+        "label": "รอบที่ 4",
+        "time": "20:30–21:00"
+      }
     },
     {
       "email": "maysavari@gmail.com",
@@ -600,43 +748,67 @@
           "rank": 4
         }
       ],
-      "queueNumber": 6,
+      "queueNumber": 38,
       "pickupPeriod": {
-        "label": "รอบที่ 1",
-        "time": "19:00–19:30"
+        "label": "รอบที่ 4",
+        "time": "20:30–21:00"
       }
     },
     {
       "email": "39465@sjc.ac.th",
       "name": "Meiing",
       "lineId": "0661462369",
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
+    },
+    {
+      "email": "mutmijrshya@gmail.com",
+      "name": "Mi",
+      "lineId": "jirashya26",
       "items": [
         {
           "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
           "rank": 1
         },
         {
-          "item": "เค้กดอกไม้",
+          "item": "เซ็ตคัพเค้กจมูกแดง",
           "rank": 3
         },
         {
-          "item": "เซ็ตคัพเค้กจมูกแดง",
+          "item": "รองเท้าจมูกแดง เข้ม",
           "rank": 4
         }
       ],
-      "queueNumber": 4,
+      "queueNumber": 14,
       "pickupPeriod": {
-        "label": "รอบที่ 1",
-        "time": "19:00–19:30"
+        "label": "รอบที่ 2",
+        "time": "19:30–20:00"
       }
     },
     {
       "email": "sutachai1122@gmail.com",
       "name": "Mickie",
       "lineId": "sutachaimicky",
-      "items": [],
-      "queueNumber": null,
-      "pickupPeriod": null
+      "items": [
+        {
+          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
+          "rank": 1
+        },
+        {
+          "item": "ทาโกะ หมึก",
+          "rank": 2
+        },
+        {
+          "item": "ทาโกะ ชีส",
+          "rank": 3
+        }
+      ],
+      "queueNumber": 1,
+      "pickupPeriod": {
+        "label": "รอบที่ 1",
+        "time": "19:00–19:30"
+      }
     },
     {
       "email": "milkkeylotion.27@gmail.com",
@@ -656,10 +828,10 @@
           "rank": 7
         }
       ],
-      "queueNumber": 16,
+      "queueNumber": 43,
       "pickupPeriod": {
-        "label": "รอบที่ 2",
-        "time": "19:30–20:00"
+        "label": "รอบที่ 5",
+        "time": "21:00–21:30"
       }
     },
     {
@@ -682,17 +854,21 @@
         {
           "item": "เซ็ตพุทราแลบลิ้น",
           "rank": 3
-        },
-        {
-          "item": "รองเท้าจมูกแดง อ่อน",
-          "rank": 7
         }
       ],
-      "queueNumber": 39,
+      "queueNumber": 36,
       "pickupPeriod": {
         "label": "รอบที่ 4",
         "time": "20:30–21:00"
       }
+    },
+    {
+      "email": "thanadds@gmail.com",
+      "name": "Mind",
+      "lineId": "babymindz",
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
     },
     {
       "email": "tanaporn.miww@gmail.com",
@@ -719,12 +895,36 @@
       "pickupPeriod": null
     },
     {
-      "email": "neo.thummarat@gmail.com",
-      "name": "neo",
-      "lineId": "neo11155",
+      "email": "nananapatt.s@gmail.com",
+      "name": "Nana",
+      "lineId": "nananptt",
       "items": [],
       "queueNumber": null,
       "pickupPeriod": null
+    },
+    {
+      "email": "neo.thummarat@gmail.com",
+      "name": "neo",
+      "lineId": "neo11155",
+      "items": [
+        {
+          "item": "มันเชฟจมูกแดง ปัง",
+          "rank": 1
+        },
+        {
+          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
+          "rank": 2
+        },
+        {
+          "item": "เซ็ตคัพเค้กจมูกแดง",
+          "rank": 3
+        }
+      ],
+      "queueNumber": 33,
+      "pickupPeriod": {
+        "label": "รอบที่ 4",
+        "time": "20:30–21:00"
+      }
     },
     {
       "email": "napajaree.nz@gmail.com",
@@ -743,6 +943,30 @@
       "pickupPeriod": null
     },
     {
+      "email": "nitchakarn.milkkey@gmail.com",
+      "name": "Nitchakarn",
+      "lineId": "Milkkey27639",
+      "items": [
+        {
+          "item": "ทาโกะ กุ้ง",
+          "rank": 1
+        },
+        {
+          "item": "เซ็ตคัพเค้กจมูกแดง",
+          "rank": 2
+        },
+        {
+          "item": "เค้กดอกไม้",
+          "rank": 3
+        }
+      ],
+      "queueNumber": 25,
+      "pickupPeriod": {
+        "label": "รอบที่ 3",
+        "time": "20:00–20:30"
+      }
+    },
+    {
       "email": "jkawatt@gmail.com",
       "name": "Nok",
       "lineId": "Nattineej",
@@ -756,15 +980,23 @@
           "rank": 2
         },
         {
-          "item": "ทาโกะ หมึก",
-          "rank": 3
+          "item": "เซ็ตคัพเค้กจมูกแดง",
+          "rank": 4
         }
       ],
-      "queueNumber": 3,
+      "queueNumber": 51,
       "pickupPeriod": {
-        "label": "รอบที่ 1",
-        "time": "19:00–19:30"
+        "label": "รอบที่ 6",
+        "time": "21:30–22:00"
       }
+    },
+    {
+      "email": "nok.pimsiri@gmail.com",
+      "name": "Nok",
+      "lineId": "joe..nok..neo",
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
     },
     {
       "email": "fahsainonta@gmail.com",
@@ -778,6 +1010,14 @@
       "email": "oil.us.a.ka@gmail.com",
       "name": "oil_us",
       "lineId": "oil_us",
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
+    },
+    {
+      "email": "peradawongpan@gmail.com",
+      "name": "Ota",
+      "lineId": "ota_support",
       "items": [],
       "queueNumber": null,
       "pickupPeriod": null
@@ -800,19 +1040,23 @@
           "rank": 1
         },
         {
-          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
-          "rank": 2
-        },
-        {
           "item": "ทาโกะ หมึก",
-          "rank": 3
+          "rank": 2
         }
       ],
-      "queueNumber": 74,
+      "queueNumber": 4,
       "pickupPeriod": {
-        "label": "รอบที่ 8",
-        "time": "22:30–23:00"
+        "label": "รอบที่ 1",
+        "time": "19:00–19:30"
       }
+    },
+    {
+      "email": "thananchaya0212@gmail.com",
+      "name": "Party",
+      "lineId": "punpun997",
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
     },
     {
       "email": "poomkornkeaw@gmail.com",
@@ -832,10 +1076,10 @@
           "rank": 4
         }
       ],
-      "queueNumber": 71,
+      "queueNumber": 34,
       "pickupPeriod": {
-        "label": "รอบที่ 8",
-        "time": "22:30–23:00"
+        "label": "รอบที่ 4",
+        "time": "20:30–21:00"
       }
     },
     {
@@ -856,16 +1100,24 @@
           "rank": 3
         }
       ],
-      "queueNumber": 48,
+      "queueNumber": 19,
       "pickupPeriod": {
-        "label": "รอบที่ 5",
-        "time": "21:00–21:30"
+        "label": "รอบที่ 2",
+        "time": "19:30–20:00"
       }
     },
     {
       "email": "pimyadapoonsawat@gmail.com",
       "name": "pimmie",
       "lineId": "pimpimyada2549",
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
+    },
+    {
+      "email": "pimjutha2529@gmail.com",
+      "name": "Pimmy",
+      "lineId": "Chunnoobow",
       "items": [
         {
           "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
@@ -873,11 +1125,67 @@
         },
         {
           "item": "เค้กดอกไม้",
-          "rank": 3
+          "rank": 2
         },
         {
-          "item": "รองเท้าจมูกแดง เข้ม",
+          "item": "เซ็ตคัพเค้กจมูกแดง",
           "rank": 4
+        }
+      ],
+      "queueNumber": 65,
+      "pickupPeriod": {
+        "label": "รอบที่ 7",
+        "time": "22:00–22:30"
+      }
+    },
+    {
+      "email": "prompatsorn2553@gmail.com",
+      "name": "Pingaun",
+      "lineId": "pingaun_.",
+      "items": [
+        {
+          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
+          "rank": 1
+        },
+        {
+          "item": "เค้กดอกไม้",
+          "rank": 2
+        },
+        {
+          "item": "เซ็ตคัพเค้กจมูกแดง",
+          "rank": 3
+        }
+      ],
+      "queueNumber": 90,
+      "pickupPeriod": {
+        "label": "รอบที่ 8",
+        "time": "22:30–23:00"
+      }
+    },
+    {
+      "email": "minemookmix25@gmail.com",
+      "name": "pinyaya",
+      "lineId": "minemookmix.",
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
+    },
+    {
+      "email": "makura491@gmail.com",
+      "name": "Ploypilin",
+      "lineId": "ponyploy491",
+      "items": [
+        {
+          "item": "มาการอง",
+          "rank": 1
+        },
+        {
+          "item": "เซ็ตพุทราแลบลิ้น",
+          "rank": 2
+        },
+        {
+          "item": "เซ็ตคัพเค้กจมูกแดง",
+          "rank": 3
         }
       ],
       "queueNumber": 5,
@@ -887,41 +1195,17 @@
       }
     },
     {
-      "email": "pimjutha2529@gmail.com",
-      "name": "Pimmy",
-      "lineId": "Chunnoobow",
+      "email": "supawat.namt@gmail.com",
+      "name": "poon",
+      "lineId": "poon2415",
       "items": [],
       "queueNumber": null,
       "pickupPeriod": null
     },
     {
-      "email": "minemookmix25@gmail.com",
-      "name": "pinyaya",
-      "lineId": "minemookmix.",
-      "items": [
-        {
-          "item": "มันเชฟจมูกแดง ปัง",
-          "rank": 1
-        },
-        {
-          "item": "คุกกี้ครีมแลบลิ้น",
-          "rank": 2
-        },
-        {
-          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
-          "rank": 3
-        }
-      ],
-      "queueNumber": 13,
-      "pickupPeriod": {
-        "label": "รอบที่ 2",
-        "time": "19:30–20:00"
-      }
-    },
-    {
-      "email": "makura491@gmail.com",
-      "name": "Ploypilin",
-      "lineId": "ponyploy491",
+      "email": "sirasithbcc161@gmail.com",
+      "name": "Pp",
+      "lineId": "pee31733",
       "items": [],
       "queueNumber": null,
       "pickupPeriod": null
@@ -938,6 +1222,30 @@
       "email": "cybergt66@gmail.com",
       "name": "Pump",
       "lineId": "arunls.",
+      "items": [
+        {
+          "item": "เปาฮิปโป ชมพู",
+          "rank": 1
+        },
+        {
+          "item": "ชีสเบอร์เกอร์ฮิปโป",
+          "rank": 2
+        },
+        {
+          "item": "เค้กดอกไม้",
+          "rank": 4
+        }
+      ],
+      "queueNumber": 21,
+      "pickupPeriod": {
+        "label": "รอบที่ 3",
+        "time": "20:00–20:30"
+      }
+    },
+    {
+      "email": "p3six211@gmail.com",
+      "name": "Pun666",
+      "lineId": "0630785657",
       "items": [],
       "queueNumber": null,
       "pickupPeriod": null
@@ -962,16 +1270,12 @@
         {
           "item": "คุกกี้ครีมแลบลิ้น",
           "rank": 2
-        },
-        {
-          "item": "ทาโกะ ชีส",
-          "rank": 4
         }
       ],
-      "queueNumber": 11,
+      "queueNumber": 66,
       "pickupPeriod": {
-        "label": "รอบที่ 2",
-        "time": "19:30–20:00"
+        "label": "รอบที่ 7",
+        "time": "22:00–22:30"
       }
     },
     {
@@ -992,10 +1296,10 @@
           "rank": 3
         }
       ],
-      "queueNumber": 23,
+      "queueNumber": 47,
       "pickupPeriod": {
-        "label": "รอบที่ 3",
-        "time": "20:00–20:30"
+        "label": "รอบที่ 5",
+        "time": "21:00–21:30"
       }
     },
     {
@@ -1007,9 +1311,25 @@
       "pickupPeriod": null
     },
     {
+      "email": "sg.sugarhoney@gmail.com",
+      "name": "Sg",
+      "lineId": "sg.sugarhoney",
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
+    },
+    {
       "email": "sofafa018@gmail.com",
       "name": "Sofa suvijak",
       "lineId": "Sofa0453",
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
+    },
+    {
+      "email": "sirakan202@gmail.com",
+      "name": "Stitch",
+      "lineId": "Aom1945",
       "items": [],
       "queueNumber": null,
       "pickupPeriod": null
@@ -1026,45 +1346,25 @@
       "email": "supachai.i@rsu.ac.th",
       "name": "Supachai",
       "lineId": "Supa_ais",
-      "items": [
-        {
-          "item": "ปลาบล็อบ",
-          "rank": 1
-        },
-        {
-          "item": "มาการอง",
-          "rank": 4
-        }
-      ],
-      "queueNumber": 27,
-      "pickupPeriod": {
-        "label": "รอบที่ 3",
-        "time": "20:00–20:30"
-      }
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
     },
     {
       "email": "chaiwatpinyo29@gmail.com",
       "name": "Tae",
       "lineId": "tae2975568",
-      "items": [
-        {
-          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
-          "rank": 1
-        },
-        {
-          "item": "ปลาบล็อบ",
-          "rank": 2
-        },
-        {
-          "item": "เค้กดอกไม้",
-          "rank": 3
-        }
-      ],
-      "queueNumber": 24,
-      "pickupPeriod": {
-        "label": "รอบที่ 3",
-        "time": "20:00–20:30"
-      }
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
+    },
+    {
+      "email": "chompunuch4843@gmail.com",
+      "name": "Tangty",
+      "lineId": "Tangtyyy_",
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
     },
     {
       "email": "boots.stationbytanthai@gmail.com",
@@ -1083,20 +1383,56 @@
       "pickupPeriod": null
     },
     {
-      "email": "610107030027top@gmail.com",
-      "name": "Top",
-      "lineId": "terrible2499",
+      "email": "phachara23416@gmail.com",
+      "name": "Tong",
+      "lineId": "tongphachara",
       "items": [],
       "queueNumber": null,
       "pickupPeriod": null
     },
     {
+      "email": "610107030027top@gmail.com",
+      "name": "Top",
+      "lineId": "terrible2499",
+      "items": [
+        {
+          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
+          "rank": 1
+        },
+        {
+          "item": "เค้กดอกไม้",
+          "rank": 2
+        }
+      ],
+      "queueNumber": 76,
+      "pickupPeriod": {
+        "label": "รอบที่ 7",
+        "time": "22:00–22:30"
+      }
+    },
+    {
       "email": "pimratachaiphromnimit@gmail.com",
       "name": "Torparn",
       "lineId": "pim_prt_parn",
-      "items": [],
-      "queueNumber": null,
-      "pickupPeriod": null
+      "items": [
+        {
+          "item": "มันเชฟจมูกแดง ปัง",
+          "rank": 1
+        },
+        {
+          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
+          "rank": 2
+        },
+        {
+          "item": "เซ็ตคัพเค้กจมูกแดง",
+          "rank": 7
+        }
+      ],
+      "queueNumber": 74,
+      "pickupPeriod": {
+        "label": "รอบที่ 7",
+        "time": "22:00–22:30"
+      }
     },
     {
       "email": "reviewjanya12345@gmail.com",
@@ -1116,10 +1452,10 @@
           "rank": 3
         }
       ],
-      "queueNumber": 12,
+      "queueNumber": 53,
       "pickupPeriod": {
-        "label": "รอบที่ 2",
-        "time": "19:30–20:00"
+        "label": "รอบที่ 6",
+        "time": "21:30–22:00"
       }
     },
     {
@@ -1134,41 +1470,81 @@
       "email": "kunlanitwa@gmail.com",
       "name": "Wa",
       "lineId": "wakunlanit",
-      "items": [],
-      "queueNumber": null,
-      "pickupPeriod": null
+      "items": [
+        {
+          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
+          "rank": 1
+        },
+        {
+          "item": "เปาฮิปโป ชมพู",
+          "rank": 2
+        },
+        {
+          "item": "ปลาบล็อบ",
+          "rank": 3
+        }
+      ],
+      "queueNumber": 69,
+      "pickupPeriod": {
+        "label": "รอบที่ 7",
+        "time": "22:00–22:30"
+      }
+    },
+    {
+      "email": "napatt.sirivash@gmail.com",
+      "name": "Wah",
+      "lineId": "LOOKWAH_22",
+      "items": [
+        {
+          "item": "เซ็ตคัพเค้กจมูกแดง",
+          "rank": 1
+        },
+        {
+          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
+          "rank": 3
+        },
+        {
+          "item": "รองเท้าจมูกแดง อ่อน",
+          "rank": 4
+        }
+      ],
+      "queueNumber": 88,
+      "pickupPeriod": {
+        "label": "รอบที่ 8",
+        "time": "22:30–23:00"
+      }
     },
     {
       "email": "kamolwan.kd@gmail.com",
       "name": "Wine",
       "lineId": "Kamolwan.y",
-      "items": [
-        {
-          "item": "มันเชฟจมูกแดง ปัง",
-          "rank": 1
-        },
-        {
-          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
-          "rank": 2
-        },
-        {
-          "item": "เซ็ตคัพเค้กจมูกแดง",
-          "rank": 3
-        }
-      ],
-      "queueNumber": 43,
-      "pickupPeriod": {
-        "label": "รอบที่ 5",
-        "time": "21:00–21:30"
-      }
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
     },
     {
       "email": "bam23082552@gmail.com",
       "name": "yak",
       "lineId": "yak14112517",
-      "items": [],
-      "queueNumber": null,
-      "pickupPeriod": null
+      "items": [
+        {
+          "item": "ทาโกะ หมึก",
+          "rank": 1
+        },
+        {
+          "item": "ทาโกะ กุ้ง",
+          "rank": 2
+        },
+        {
+          "item": "ทาโกะ ชีส",
+          "rank": 3
+        }
+      ],
+      "queueNumber": 71,
+      "pickupPeriod": {
+        "label": "รอบที่ 7",
+        "time": "22:00–22:30"
+      }
     },
     {
       "email": "yinglak.bun@gmail.com",
@@ -1182,9 +1558,25 @@
       "email": "imyyan25@gmail.com",
       "name": "Ymtp",
       "lineId": "ymtp25",
-      "items": [],
-      "queueNumber": null,
-      "pickupPeriod": null
+      "items": [
+        {
+          "item": "ทาโกะ หมึก",
+          "rank": 1
+        },
+        {
+          "item": "ทาโกะ กุ้ง",
+          "rank": 2
+        },
+        {
+          "item": "ทาโกะ ชีส",
+          "rank": 3
+        }
+      ],
+      "queueNumber": 97,
+      "pickupPeriod": {
+        "label": "รอบที่ 8",
+        "time": "22:30–23:00"
+      }
     },
     {
       "email": "earn5114267@gmail.com",
@@ -1204,40 +1596,32 @@
           "rank": 4
         }
       ],
-      "queueNumber": 20,
+      "queueNumber": 64,
       "pickupPeriod": {
-        "label": "รอบที่ 2",
-        "time": "19:30–20:00"
+        "label": "รอบที่ 7",
+        "time": "22:00–22:30"
       }
     },
     {
       "email": "cap.kawintida@gmail.com",
       "name": "กวิน",
       "lineId": "kawiiin25",
-      "items": [
-        {
-          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
-          "rank": 1
-        },
-        {
-          "item": "รองเท้าจมูกแดง เข้ม",
-          "rank": 2
-        },
-        {
-          "item": "รองเท้าจมูกแดง อ่อน",
-          "rank": 3
-        }
-      ],
-      "queueNumber": 77,
-      "pickupPeriod": {
-        "label": "รอบที่ 8",
-        "time": "22:30–23:00"
-      }
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
     },
     {
       "email": "hibarigodji@gmail.com",
       "name": "ก๊อด",
       "lineId": "kuzzes",
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
+    },
+    {
+      "email": "meknarak2546@gmail.com",
+      "name": "ก้อนเมฆ",
+      "lineId": "mekk_tnk",
       "items": [],
       "queueNumber": null,
       "pickupPeriod": null
@@ -1260,32 +1644,40 @@
           "rank": 4
         }
       ],
-      "queueNumber": 54,
+      "queueNumber": 9,
       "pickupPeriod": {
-        "label": "รอบที่ 6",
-        "time": "21:30–22:00"
+        "label": "รอบที่ 1",
+        "time": "19:00–19:30"
       }
     },
     {
       "email": "guzza2548@gmail.com",
       "name": "กัสซ่า",
       "lineId": "guzza2548",
-      "items": [],
-      "queueNumber": null,
-      "pickupPeriod": null
+      "items": [
+        {
+          "item": "ปลาบล็อบ",
+          "rank": 1
+        },
+        {
+          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
+          "rank": 3
+        },
+        {
+          "item": "กล้วยหั่น",
+          "rank": 4
+        }
+      ],
+      "queueNumber": 57,
+      "pickupPeriod": {
+        "label": "รอบที่ 6",
+        "time": "21:30–22:00"
+      }
     },
     {
       "email": "wmenhkf92hmidu8@gmail.com",
       "name": "กาก้า",
       "lineId": "natawut06",
-      "items": [],
-      "queueNumber": null,
-      "pickupPeriod": null
-    },
-    {
-      "email": "ganskate251056@gmail.com",
-      "name": "กานต์",
-      "lineId": "0904400334",
       "items": [],
       "queueNumber": null,
       "pickupPeriod": null
@@ -1326,25 +1718,9 @@
       "email": "pongsakorns@gmail.com",
       "name": "กีกี้",
       "lineId": "Peaky",
-      "items": [
-        {
-          "item": "เค้กดอกไม้",
-          "rank": 1
-        },
-        {
-          "item": "เซ็ตพุทราแลบลิ้น",
-          "rank": 2
-        },
-        {
-          "item": "เซ็ตคัพเค้กจมูกแดง",
-          "rank": 3
-        }
-      ],
-      "queueNumber": 65,
-      "pickupPeriod": {
-        "label": "รอบที่ 7",
-        "time": "22:00–22:30"
-      }
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
     },
     {
       "email": "flowfarfang@gmail.com",
@@ -1358,49 +1734,17 @@
       "email": "g.of.grace123@gmail.com",
       "name": "เก้ด",
       "lineId": "grace.7xrp1",
-      "items": [
-        {
-          "item": "เซ็ตถุงกับกล่อง",
-          "rank": 1
-        },
-        {
-          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
-          "rank": 3
-        },
-        {
-          "item": "เค้กดอกไม้",
-          "rank": 4
-        }
-      ],
-      "queueNumber": 7,
-      "pickupPeriod": {
-        "label": "รอบที่ 1",
-        "time": "19:00–19:30"
-      }
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
     },
     {
       "email": "chayamat45@gmail.com",
       "name": "เกล",
       "lineId": "Scale2536",
-      "items": [
-        {
-          "item": "มาการอง",
-          "rank": 1
-        },
-        {
-          "item": "เซ็ตคัพเค้กจมูกแดง",
-          "rank": 3
-        },
-        {
-          "item": "เนยก้อน เหลือง",
-          "rank": 6
-        }
-      ],
-      "queueNumber": 17,
-      "pickupPeriod": {
-        "label": "รอบที่ 2",
-        "time": "19:30–20:00"
-      }
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
     },
     {
       "email": "baitoeybabyjin2493@gmail.com",
@@ -1414,25 +1758,9 @@
       "email": "atom.ozone.24@gmail.com",
       "name": "เก้า",
       "lineId": "0646766519",
-      "items": [
-        {
-          "item": "เซ็ตถุงกับกล่อง",
-          "rank": 1
-        },
-        {
-          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
-          "rank": 2
-        },
-        {
-          "item": "ถุงกระดาษ",
-          "rank": 3
-        }
-      ],
-      "queueNumber": 29,
-      "pickupPeriod": {
-        "label": "รอบที่ 3",
-        "time": "20:00–20:30"
-      }
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
     },
     {
       "email": "kaok0988@gmail.com",
@@ -1443,12 +1771,44 @@
       "pickupPeriod": null
     },
     {
+      "email": "kwan0993529654@gmail.com",
+      "name": "ขวัญ",
+      "lineId": "kwan15955",
+      "items": [
+        {
+          "item": "เซ็ตถุงกับกล่อง",
+          "rank": 1
+        }
+      ],
+      "queueNumber": 35,
+      "pickupPeriod": {
+        "label": "รอบที่ 4",
+        "time": "20:30–21:00"
+      }
+    },
+    {
       "email": "69100115@kmitl.ac.th",
       "name": "ไข่มุก",
       "lineId": "pfth2549",
-      "items": [],
-      "queueNumber": null,
-      "pickupPeriod": null
+      "items": [
+        {
+          "item": "เค้กดอกไม้",
+          "rank": 1
+        },
+        {
+          "item": "เซ็ตคัพเค้กจมูกแดง",
+          "rank": 2
+        },
+        {
+          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
+          "rank": 3
+        }
+      ],
+      "queueNumber": 40,
+      "pickupPeriod": {
+        "label": "รอบที่ 4",
+        "time": "20:30–21:00"
+      }
     },
     {
       "email": "pppppondhub@gmail.com",
@@ -1457,6 +1817,54 @@
       "items": [],
       "queueNumber": null,
       "pickupPeriod": null
+    },
+    {
+      "email": "ananyayaning@gmail.com",
+      "name": "คะนิ้ง",
+      "lineId": "nin25433",
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
+    },
+    {
+      "email": "keenansasiporn@gmail.com",
+      "name": "คีย์",
+      "lineId": "Key.a1996",
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
+    },
+    {
+      "email": "earnnyviolinz@gmail.com",
+      "name": "คุกกี้มันบด",
+      "lineId": "earnnymisao",
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
+    },
+    {
+      "email": "atikun13@gmail.com",
+      "name": "คุณ",
+      "lineId": "atikhun13",
+      "items": [
+        {
+          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
+          "rank": 1
+        },
+        {
+          "item": "ทาโกะ ชีส",
+          "rank": 2
+        },
+        {
+          "item": "ปลาบล็อบ",
+          "rank": 3
+        }
+      ],
+      "queueNumber": 39,
+      "pickupPeriod": {
+        "label": "รอบที่ 4",
+        "time": "20:30–21:00"
+      }
     },
     {
       "email": "kunakorn.jcd@gmail.com",
@@ -1470,16 +1878,12 @@
         {
           "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
           "rank": 2
-        },
-        {
-          "item": "ทาโกะ หมึก",
-          "rank": 3
         }
       ],
-      "queueNumber": 51,
+      "queueNumber": 49,
       "pickupPeriod": {
-        "label": "รอบที่ 6",
-        "time": "21:30–22:00"
+        "label": "รอบที่ 5",
+        "time": "21:00–21:30"
       }
     },
     {
@@ -1508,11 +1912,19 @@
           "rank": 3
         }
       ],
-      "queueNumber": 32,
+      "queueNumber": 86,
       "pickupPeriod": {
-        "label": "รอบที่ 4",
-        "time": "20:30–21:00"
+        "label": "รอบที่ 8",
+        "time": "22:30–23:00"
       }
+    },
+    {
+      "email": "tlilapay@gmail.com",
+      "name": "แคร์",
+      "lineId": "0954627195",
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
     },
     {
       "email": "rachaneekorn2008@gmail.com",
@@ -1531,25 +1943,101 @@
       "pickupPeriod": null
     },
     {
-      "email": "alinthebaby@gmail.com",
-      "name": "ฉัตรภพรัตน์",
-      "lineId": "Akinobra",
+      "email": "jeepwoza@gmail.com",
+      "name": "จี๊ป",
+      "lineId": "54010989",
+      "items": [
+        {
+          "item": "เปาฮิปโป ชมพู",
+          "rank": 1
+        },
+        {
+          "item": "ถุงกระดาษ",
+          "rank": 2
+        }
+      ],
+      "queueNumber": 29,
+      "pickupPeriod": {
+        "label": "รอบที่ 3",
+        "time": "20:00–20:30"
+      }
+    },
+    {
+      "email": "jamsps18@gmail.com",
+      "name": "เจ",
+      "lineId": "Pchnn.",
       "items": [],
       "queueNumber": null,
       "pickupPeriod": null
+    },
+    {
+      "email": "gmwjanzm@gmail.com",
+      "name": "แจน กราฟฟิค",
+      "lineId": "chickachicken",
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
+    },
+    {
+      "email": "alinthebaby@gmail.com",
+      "name": "ฉัตรภพรัตน์",
+      "lineId": "Akinobra",
+      "items": [
+        {
+          "item": "เค้กดอกไม้",
+          "rank": 1
+        },
+        {
+          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
+          "rank": 2
+        },
+        {
+          "item": "เซ็ตคัพเค้กจมูกแดง",
+          "rank": 6
+        }
+      ],
+      "queueNumber": 55,
+      "pickupPeriod": {
+        "label": "รอบที่ 6",
+        "time": "21:30–22:00"
+      }
     },
     {
       "email": "zxzearth123@gmail.com",
       "name": "ฉันรักสกุ๊ชชี่",
       "lineId": "zxz121z",
-      "items": [],
-      "queueNumber": null,
-      "pickupPeriod": null
+      "items": [
+        {
+          "item": "เซ็ตคัพเค้กจมูกแดง",
+          "rank": 1
+        },
+        {
+          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
+          "rank": 2
+        },
+        {
+          "item": "รองเท้าจมูกแดง เข้ม",
+          "rank": 3
+        }
+      ],
+      "queueNumber": 15,
+      "pickupPeriod": {
+        "label": "รอบที่ 2",
+        "time": "19:30–20:00"
+      }
     },
     {
       "email": "dsana0649586971@gmail.com",
       "name": "ชญาภา(เนย)",
       "lineId": "ccchayapa",
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
+    },
+    {
+      "email": "plapekasii@gmail.com",
+      "name": "ชนิกา ว่องวาจานนท์",
+      "lineId": "plapekaz",
       "items": [],
       "queueNumber": null,
       "pickupPeriod": null
@@ -1561,6 +2049,46 @@
       "items": [],
       "queueNumber": null,
       "pickupPeriod": null
+    },
+    {
+      "email": "dylan.ohobrien@gmail.com",
+      "name": "ชา",
+      "lineId": "preecha.sr",
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
+    },
+    {
+      "email": "plumcitrchutimnthn@gmail.com",
+      "name": "ชุติมณฑน์",
+      "lineId": "0907385146",
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
+    },
+    {
+      "email": "piyathida.thm@spumail.net",
+      "name": "เชียร์",
+      "lineId": "642908798",
+      "items": [
+        {
+          "item": "เค้กดอกไม้",
+          "rank": 1
+        },
+        {
+          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
+          "rank": 2
+        },
+        {
+          "item": "เซ็ตคัพเค้กจมูกแดง",
+          "rank": 3
+        }
+      ],
+      "queueNumber": 52,
+      "pickupPeriod": {
+        "label": "รอบที่ 6",
+        "time": "21:30–22:00"
+      }
     },
     {
       "email": "ssamita31@gmail.com",
@@ -1582,6 +2110,30 @@
       "email": "nattawat.5897@gmail.com",
       "name": "เซฟ",
       "lineId": "nattawatsf",
+      "items": [
+        {
+          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
+          "rank": 1
+        },
+        {
+          "item": "เค้กดอกไม้",
+          "rank": 3
+        },
+        {
+          "item": "เซ็ตพุทราแลบลิ้น",
+          "rank": 7
+        }
+      ],
+      "queueNumber": 60,
+      "pickupPeriod": {
+        "label": "รอบที่ 6",
+        "time": "21:30–22:00"
+      }
+    },
+    {
+      "email": "shertam.sh@gmail.com",
+      "name": "เฌอแตม",
+      "lineId": "0887742031 (อันนี้เป็นIDนะคะ)",
       "items": [],
       "queueNumber": null,
       "pickupPeriod": null
@@ -1606,30 +2158,22 @@
       "email": "dungtuangwit@gmail.com",
       "name": "ดัง",
       "lineId": "tuangwitphungpan2604",
-      "items": [
-        {
-          "item": "เซ็ตถุงกับกล่อง",
-          "rank": 1
-        },
-        {
-          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
-          "rank": 2
-        },
-        {
-          "item": "คุกกี้ครีมแลบลิ้น",
-          "rank": 4
-        }
-      ],
-      "queueNumber": 56,
-      "pickupPeriod": {
-        "label": "รอบที่ 6",
-        "time": "21:30–22:00"
-      }
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
     },
     {
       "email": "khateuxncinthphr@gmail.com",
       "name": "ดี",
       "lineId": "khondee6063",
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
+    },
+    {
+      "email": "saiyyiyi08@gmail.com",
+      "name": "ดีไซน์",
+      "lineId": "saiyyi2546",
       "items": [],
       "queueNumber": null,
       "pickupPeriod": null
@@ -1645,7 +2189,7 @@
     {
       "email": "namhwan578@gmail.com",
       "name": "โดม",
-      "lineId": "Preaw111111",
+      "lineId": "Preaw11111111",
       "items": [],
       "queueNumber": null,
       "pickupPeriod": null
@@ -1668,35 +2212,19 @@
           "rank": 3
         }
       ],
-      "queueNumber": 70,
+      "queueNumber": 17,
       "pickupPeriod": {
-        "label": "รอบที่ 7",
-        "time": "22:00–22:30"
+        "label": "รอบที่ 2",
+        "time": "19:30–20:00"
       }
     },
     {
       "email": "salasamleet@gmail.com",
       "name": "ธวัชชัย",
       "lineId": "Thawatchsi24",
-      "items": [
-        {
-          "item": "ทาโกะ ชีส",
-          "rank": 1
-        },
-        {
-          "item": "ทาโกะ กุ้ง",
-          "rank": 2
-        },
-        {
-          "item": "ทาโกะ หมึก",
-          "rank": 3
-        }
-      ],
-      "queueNumber": 42,
-      "pickupPeriod": {
-        "label": "รอบที่ 5",
-        "time": "21:00–21:30"
-      }
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
     },
     {
       "email": "nokkawaiis@gmail.com",
@@ -1724,10 +2252,10 @@
           "rank": 4
         }
       ],
-      "queueNumber": 9,
+      "queueNumber": 93,
       "pickupPeriod": {
-        "label": "รอบที่ 1",
-        "time": "19:00–19:30"
+        "label": "รอบที่ 8",
+        "time": "22:30–23:00"
       }
     },
     {
@@ -1739,28 +2267,20 @@
       "pickupPeriod": null
     },
     {
+      "email": "tanaphon.nana2550@gmail.com",
+      "name": "นานา",
+      "lineId": "tanaphon_nana",
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
+    },
+    {
       "email": "workwithnksrt@gmail.com",
       "name": "น้ำข้าว",
       "lineId": "srtpnk",
-      "items": [
-        {
-          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
-          "rank": 1
-        },
-        {
-          "item": "เซ็ตคัพเค้กจมูกแดง",
-          "rank": 2
-        },
-        {
-          "item": "ทาโกะ ชีส",
-          "rank": 5
-        }
-      ],
-      "queueNumber": 55,
-      "pickupPeriod": {
-        "label": "รอบที่ 6",
-        "time": "21:30–22:00"
-      }
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
     },
     {
       "email": "tpatchareeyay@gmail.com",
@@ -1790,6 +2310,26 @@
       "email": "ananya.k1214@gmail.com",
       "name": "น้ำหวาน",
       "lineId": "ananya1224",
+      "items": [
+        {
+          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
+          "rank": 1
+        },
+        {
+          "item": "เซ็ตคัพเค้กจมูกแดง",
+          "rank": 2
+        }
+      ],
+      "queueNumber": 23,
+      "pickupPeriod": {
+        "label": "รอบที่ 3",
+        "time": "20:00–20:30"
+      }
+    },
+    {
+      "email": "nunid2536@gmail.com",
+      "name": "นิด",
+      "lineId": "Junyamon",
       "items": [],
       "queueNumber": null,
       "pickupPeriod": null
@@ -1798,25 +2338,9 @@
       "email": "resnarint.petch@gmail.com",
       "name": "นิวเชียน",
       "lineId": "jj-rj",
-      "items": [
-        {
-          "item": "ปลาบล็อบ",
-          "rank": 1
-        },
-        {
-          "item": "เซ็ตคัพเค้กจมูกแดง",
-          "rank": 3
-        },
-        {
-          "item": "เซ็ตพุทราแลบลิ้น",
-          "rank": 4
-        }
-      ],
-      "queueNumber": 62,
-      "pickupPeriod": {
-        "label": "รอบที่ 7",
-        "time": "22:00–22:30"
-      }
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
     },
     {
       "email": "newchean.poe@gmail.com",
@@ -1836,67 +2360,51 @@
           "rank": 4
         }
       ],
-      "queueNumber": 58,
+      "queueNumber": 83,
       "pickupPeriod": {
-        "label": "รอบที่ 6",
-        "time": "21:30–22:00"
+        "label": "รอบที่ 8",
+        "time": "22:30–23:00"
       }
     },
     {
       "email": "imneenx@gmail.com",
       "name": "นีน่า",
       "lineId": "praew_praewa2549",
-      "items": [
-        {
-          "item": "เค้กดอกไม้",
-          "rank": 1
-        },
-        {
-          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
-          "rank": 2
-        },
-        {
-          "item": "รองเท้าจมูกแดง เข้ม",
-          "rank": 5
-        }
-      ],
-      "queueNumber": 46,
-      "pickupPeriod": {
-        "label": "รอบที่ 5",
-        "time": "21:00–21:30"
-      }
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
     },
     {
       "email": "namefc2141@gmail.com",
       "name": "เนม",
       "lineId": "name_munkong",
-      "items": [
-        {
-          "item": "รองเท้าจมูกแดง เข้ม",
-          "rank": 1
-        },
-        {
-          "item": "รองเท้าจมูกแดง อ่อน",
-          "rank": 2
-        },
-        {
-          "item": "เซ็ตคัพเค้กจมูกแดง",
-          "rank": 3
-        }
-      ],
-      "queueNumber": 21,
-      "pickupPeriod": {
-        "label": "รอบที่ 3",
-        "time": "20:00–20:30"
-      }
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
     },
     {
       "email": "piyapornkhamnark@gmail.com",
       "name": "เนย",
       "lineId": "noey_pyp",
-      "items": [],
-      "queueNumber": null,
-      "pickupPeriod": null
+      "items": [
+        {
+          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
+          "rank": 1
+        },
+        {
+          "item": "ทาโกะ ชีส",
+          "rank": 2
+        },
+        {
+          "item": "เซ็ตคัพเค้กจมูกแดง",
+          "rank": 7
+        }
+      ],
+      "queueNumber": 3,
+      "pickupPeriod": {
+        "label": "รอบที่ 1",
+        "time": "19:00–19:30"
+      }
     },
     {
       "email": "tal0626103700@gmail.com",
@@ -1924,10 +2432,10 @@
           "rank": 3
         }
       ],
-      "queueNumber": 64,
+      "queueNumber": 98,
       "pickupPeriod": {
-        "label": "รอบที่ 7",
-        "time": "22:00–22:30"
+        "label": "รอบที่ 8",
+        "time": "22:30–23:00"
       }
     },
     {
@@ -1940,18 +2448,42 @@
           "rank": 1
         },
         {
-          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
-          "rank": 5
+          "item": "ปลาบล็อบ",
+          "rank": 3
         },
         {
-          "item": "เซ็ตคัพเค้กจมูกแดง",
-          "rank": 6
+          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
+          "rank": 5
         }
       ],
-      "queueNumber": 59,
+      "queueNumber": 28,
       "pickupPeriod": {
-        "label": "รอบที่ 6",
-        "time": "21:30–22:00"
+        "label": "รอบที่ 3",
+        "time": "20:00–20:30"
+      }
+    },
+    {
+      "email": "nattapong88pp@gmail.com",
+      "name": "บาส",
+      "lineId": "0933039043",
+      "items": [
+        {
+          "item": "ชีสเบอร์เกอร์ฮิปโป",
+          "rank": 1
+        },
+        {
+          "item": "มาการอง",
+          "rank": 2
+        },
+        {
+          "item": "เซ็ตพุทราแลบลิ้น",
+          "rank": 3
+        }
+      ],
+      "queueNumber": 45,
+      "pickupPeriod": {
+        "label": "รอบที่ 5",
+        "time": "21:00–21:30"
       }
     },
     {
@@ -1963,17 +2495,29 @@
       "pickupPeriod": null
     },
     {
-      "email": "beamzarap@gmail.com",
-      "name": "บีม",
-      "lineId": "beampantanan",
-      "items": [],
-      "queueNumber": null,
-      "pickupPeriod": null
-    },
-    {
       "email": "66112213@dpu.ac.th",
       "name": "บีม",
       "lineId": "beam048",
+      "items": [
+        {
+          "item": "เค้กดอกไม้",
+          "rank": 1
+        },
+        {
+          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
+          "rank": 2
+        }
+      ],
+      "queueNumber": 27,
+      "pickupPeriod": {
+        "label": "รอบที่ 3",
+        "time": "20:00–20:30"
+      }
+    },
+    {
+      "email": "beamzarap@gmail.com",
+      "name": "บีม",
+      "lineId": "beampantanan",
       "items": [],
       "queueNumber": null,
       "pickupPeriod": null
@@ -1990,25 +2534,9 @@
       "email": "belgiumtmp@gmail.com",
       "name": "เบลเยี่ยม",
       "lineId": "Belgiummm",
-      "items": [
-        {
-          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
-          "rank": 1
-        },
-        {
-          "item": "ทาโกะ ชีส",
-          "rank": 3
-        },
-        {
-          "item": "ทาโกะ หมึก",
-          "rank": 4
-        }
-      ],
-      "queueNumber": 73,
-      "pickupPeriod": {
-        "label": "รอบที่ 8",
-        "time": "22:30–23:00"
-      }
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
     },
     {
       "email": "tanyaforworkonly@gmail.com",
@@ -2024,35 +2552,19 @@
           "rank": 2
         }
       ],
-      "queueNumber": 22,
+      "queueNumber": 58,
       "pickupPeriod": {
-        "label": "รอบที่ 3",
-        "time": "20:00–20:30"
+        "label": "รอบที่ 6",
+        "time": "21:30–22:00"
       }
     },
     {
-      "email": "purejiz0329@gmail.com",
-      "name": "แบม",
-      "lineId": "purejiz26",
-      "items": [
-        {
-          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
-          "rank": 1
-        },
-        {
-          "item": "กล้วยหั่น",
-          "rank": 2
-        },
-        {
-          "item": "ถุงกระดาษ",
-          "rank": 3
-        }
-      ],
-      "queueNumber": 49,
-      "pickupPeriod": {
-        "label": "รอบที่ 5",
-        "time": "21:00–21:30"
-      }
+      "email": "beer.natt05@gmail.com",
+      "name": "เบียร์",
+      "lineId": "nattachaihumbig",
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
     },
     {
       "email": "bammee0729@gmail.com",
@@ -2063,36 +2575,68 @@
       "pickupPeriod": null
     },
     {
+      "email": "purejiz0329@gmail.com",
+      "name": "แบม",
+      "lineId": "purejiz26",
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
+    },
+    {
       "email": "kwangdonlaporn@gmail.com",
       "name": "แบมบี้",
       "lineId": "kwangdonlaporn",
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
+    },
+    {
+      "email": "chayanee.onk@gmail.com",
+      "name": "โบว์",
+      "lineId": "Chayaneebow",
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
+    },
+    {
+      "email": "nokja1802@gmail.com",
+      "name": "ปราย",
+      "lineId": "pprymc",
       "items": [
         {
-          "item": "เซ็ตคัพเค้กจมูกแดง",
+          "item": "เนยก้อน เหลือง",
           "rank": 1
         },
         {
-          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
+          "item": "เซ็ตพุทราแลบลิ้น",
           "rank": 2
-        },
-        {
-          "item": "ทาโกะ หมึก",
-          "rank": 3
         }
       ],
-      "queueNumber": 41,
+      "queueNumber": 72,
       "pickupPeriod": {
-        "label": "รอบที่ 5",
-        "time": "21:00–21:30"
+        "label": "รอบที่ 7",
+        "time": "22:00–22:30"
       }
     },
     {
       "email": "wirnuchphlcanthr67@gmail.com",
       "name": "ปราย",
       "lineId": "weeranuch23.",
-      "items": [],
-      "queueNumber": null,
-      "pickupPeriod": null
+      "items": [
+        {
+          "item": "มันเชฟจมูกแดง ปัง",
+          "rank": 1
+        },
+        {
+          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
+          "rank": 2
+        }
+      ],
+      "queueNumber": 12,
+      "pickupPeriod": {
+        "label": "รอบที่ 2",
+        "time": "19:30–20:00"
+      }
     },
     {
       "email": "theprint15@gmail.com",
@@ -2111,6 +2655,26 @@
       "pickupPeriod": null
     },
     {
+      "email": "parichat.phorboon@gmail.com",
+      "name": "ปลา",
+      "lineId": "Nupar",
+      "items": [
+        {
+          "item": "เซ็ตคัพเค้กจมูกแดง",
+          "rank": 1
+        },
+        {
+          "item": "เนยก้อน ช็อก",
+          "rank": 2
+        }
+      ],
+      "queueNumber": 68,
+      "pickupPeriod": {
+        "label": "รอบที่ 7",
+        "time": "22:00–22:30"
+      }
+    },
+    {
       "email": "praypray54@gmail.com",
       "name": "ปลาย",
       "lineId": "Pxz.q",
@@ -2127,6 +2691,26 @@
       "pickupPeriod": null
     },
     {
+      "email": "pleumphi@gmail.com",
+      "name": "ปลื้ม",
+      "lineId": "aamgg",
+      "items": [
+        {
+          "item": "เซ็ตคัพเค้กจมูกแดง",
+          "rank": 1
+        },
+        {
+          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
+          "rank": 2
+        }
+      ],
+      "queueNumber": 67,
+      "pickupPeriod": {
+        "label": "รอบที่ 7",
+        "time": "22:00–22:30"
+      }
+    },
+    {
       "email": "jejepooh2493@gmail.com",
       "name": "ปวีณกร พองชัยภูมิ",
       "lineId": "tzuyuilove",
@@ -2138,38 +2722,70 @@
       "email": "nooporkaa.p@gmail.com",
       "name": "ปอ",
       "lineId": "nooporja.a",
-      "items": [
-        {
-          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
-          "rank": 1
-        },
-        {
-          "item": "ปลาบล็อบ",
-          "rank": 2
-        },
-        {
-          "item": "กล้วยหั่น",
-          "rank": 4
-        }
-      ],
-      "queueNumber": 31,
-      "pickupPeriod": {
-        "label": "รอบที่ 4",
-        "time": "20:30–21:00"
-      }
-    },
-    {
-      "email": "pinnan0209@gmail.com",
-      "name": "ปิ่น",
-      "lineId": "pintommy",
       "items": [],
       "queueNumber": null,
       "pickupPeriod": null
     },
     {
+      "email": "pinnan0209@gmail.com",
+      "name": "ปิ่น",
+      "lineId": "pintommy",
+      "items": [
+        {
+          "item": "เนยก้อน เหลือง",
+          "rank": 1
+        },
+        {
+          "item": "กล้วยหั่น",
+          "rank": 2
+        },
+        {
+          "item": "เซ็ตคัพเค้กจมูกแดง",
+          "rank": 3
+        }
+      ],
+      "queueNumber": 50,
+      "pickupPeriod": {
+        "label": "รอบที่ 5",
+        "time": "21:00–21:30"
+      }
+    },
+    {
       "email": "pukkypook@gmail.com",
       "name": "ปุ๊กกี้",
       "lineId": "akikopukky",
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
+    },
+    {
+      "email": "shinnutthikan@gmail.com",
+      "name": "ฝ้าย",
+      "lineId": "im_finee",
+      "items": [
+        {
+          "item": "เค้กดอกไม้",
+          "rank": 1
+        },
+        {
+          "item": "เปาฮิปโป ชมพู",
+          "rank": 2
+        },
+        {
+          "item": "เนยก้อน ช็อก",
+          "rank": 3
+        }
+      ],
+      "queueNumber": 8,
+      "pickupPeriod": {
+        "label": "รอบที่ 1",
+        "time": "19:00–19:30"
+      }
+    },
+    {
+      "email": "botanskate@gmail.com",
+      "name": "พ้ชรวดี",
+      "lineId": "Botanbotan24",
       "items": [],
       "queueNumber": null,
       "pickupPeriod": null
@@ -2200,10 +2816,10 @@
           "rank": 3
         }
       ],
-      "queueNumber": 28,
+      "queueNumber": 70,
       "pickupPeriod": {
-        "label": "รอบที่ 3",
-        "time": "20:00–20:30"
+        "label": "รอบที่ 7",
+        "time": "22:00–22:30"
       }
     },
     {
@@ -2218,25 +2834,9 @@
       "email": "pew2539.jp@gmail.com",
       "name": "พิว",
       "lineId": "@pewzaa007",
-      "items": [
-        {
-          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
-          "rank": 1
-        },
-        {
-          "item": "เซ็ตคัพเค้กจมูกแดง",
-          "rank": 2
-        },
-        {
-          "item": "ทาโกะ ชีส",
-          "rank": 3
-        }
-      ],
-      "queueNumber": 26,
-      "pickupPeriod": {
-        "label": "รอบที่ 3",
-        "time": "20:00–20:30"
-      }
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
     },
     {
       "email": "pee4131@hotmail.com",
@@ -2258,45 +2858,53 @@
       "email": "pissinekg@gmail.com",
       "name": "พี่สมสุข",
       "lineId": "Pui_fang",
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
+    },
+    {
+      "email": "nawinda.29@gmail.com",
+      "name": "พี่เอกกี้",
+      "lineId": "ake0866029622",
       "items": [
         {
-          "item": "เซ็ตถุงกับกล่อง",
+          "item": "ทาโกะ กุ้ง",
           "rank": 1
         },
         {
-          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
+          "item": "เค้กดอกไม้",
           "rank": 2
         }
       ],
-      "queueNumber": 25,
+      "queueNumber": 78,
       "pickupPeriod": {
-        "label": "รอบที่ 3",
-        "time": "20:00–20:30"
+        "label": "รอบที่ 7",
+        "time": "22:00–22:30"
       }
+    },
+    {
+      "email": "ake_kung29@hotmail.com",
+      "name": "พี่เอกกี้",
+      "lineId": "ake0866029622",
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
     },
     {
       "email": "isaidgirlsad@gmail.com",
       "name": "เพลง",
       "lineId": "plengpleng46",
-      "items": [
-        {
-          "item": "เค้กดอกไม้",
-          "rank": 1
-        },
-        {
-          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
-          "rank": 2
-        },
-        {
-          "item": "เปาฮิปโป ชมพู",
-          "rank": 3
-        }
-      ],
-      "queueNumber": 76,
-      "pickupPeriod": {
-        "label": "รอบที่ 8",
-        "time": "22:30–23:00"
-      }
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
+    },
+    {
+      "email": "pattpipis.orn@gmail.com",
+      "name": "แพท",
+      "lineId": "ppopatt.",
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
     },
     {
       "email": "benjawan191patty@gmail.com",
@@ -2316,24 +2924,52 @@
           "rank": 3
         }
       ],
-      "queueNumber": 35,
+      "queueNumber": 91,
       "pickupPeriod": {
-        "label": "รอบที่ 4",
-        "time": "20:30–21:00"
+        "label": "รอบที่ 8",
+        "time": "22:30–23:00"
       }
     },
     {
       "email": "nattita.tapo@bumail.net",
       "name": "แพนเค้ก",
       "lineId": "Pan010563",
-      "items": [],
-      "queueNumber": null,
-      "pickupPeriod": null
+      "items": [
+        {
+          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
+          "rank": 1
+        },
+        {
+          "item": "เซ็ตคัพเค้กจมูกแดง",
+          "rank": 2
+        }
+      ],
+      "queueNumber": 63,
+      "pickupPeriod": {
+        "label": "รอบที่ 7",
+        "time": "22:00–22:30"
+      }
     },
     {
       "email": "krittiyachum@gmail.com",
       "name": "แพรลี่",
       "lineId": "pear0893324696",
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
+    },
+    {
+      "email": "kantapon.sap@ku.th",
+      "name": "ฟ่าง",
+      "lineId": "Fngg",
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
+    },
+    {
+      "email": "fasaisikarn@gmail.com",
+      "name": "ฟ้าใส",
+      "lineId": "fasaisikarn",
       "items": [],
       "queueNumber": null,
       "pickupPeriod": null
@@ -2366,25 +3002,9 @@
       "email": "tanakornfour2546@gmail.com",
       "name": "โฟ",
       "lineId": "f_tanakorn",
-      "items": [
-        {
-          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
-          "rank": 1
-        },
-        {
-          "item": "เซ็ตคัพเค้กจมูกแดง",
-          "rank": 2
-        },
-        {
-          "item": "ถุงกระดาษ",
-          "rank": 3
-        }
-      ],
-      "queueNumber": 67,
-      "pickupPeriod": {
-        "label": "รอบที่ 7",
-        "time": "22:00–22:30"
-      }
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
     },
     {
       "email": "focus15963@gmail.com",
@@ -2404,10 +3024,34 @@
           "rank": 3
         }
       ],
-      "queueNumber": 44,
+      "queueNumber": 37,
       "pickupPeriod": {
-        "label": "รอบที่ 5",
-        "time": "21:00–21:30"
+        "label": "รอบที่ 4",
+        "time": "20:30–21:00"
+      }
+    },
+    {
+      "email": "julyfoam@gmail.com",
+      "name": "โฟม",
+      "lineId": "Foamm_nawinda",
+      "items": [
+        {
+          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
+          "rank": 1
+        },
+        {
+          "item": "เนยก้อน เหลือง",
+          "rank": 2
+        },
+        {
+          "item": "เค้กดอกไม้",
+          "rank": 6
+        }
+      ],
+      "queueNumber": 84,
+      "pickupPeriod": {
+        "label": "รอบที่ 8",
+        "time": "22:30–23:00"
       }
     },
     {
@@ -2419,12 +3063,52 @@
       "pickupPeriod": null
     },
     {
+      "email": "khanit7551@gmail.com",
+      "name": "มะลื",
+      "lineId": "I_joys",
+      "items": [
+        {
+          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
+          "rank": 1
+        },
+        {
+          "item": "ทาโกะ หมึก",
+          "rank": 2
+        },
+        {
+          "item": "เค้กดอกไม้",
+          "rank": 6
+        }
+      ],
+      "queueNumber": 62,
+      "pickupPeriod": {
+        "label": "รอบที่ 7",
+        "time": "22:00–22:30"
+      }
+    },
+    {
       "email": "kankanit.ket@gmail.com",
       "name": "มะโหน่ง",
       "lineId": "kxnknit",
-      "items": [],
-      "queueNumber": null,
-      "pickupPeriod": null
+      "items": [
+        {
+          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
+          "rank": 1
+        },
+        {
+          "item": "เซ็ตคัพเค้กจมูกแดง",
+          "rank": 2
+        },
+        {
+          "item": "รองเท้าจมูกแดง อ่อน",
+          "rank": 5
+        }
+      ],
+      "queueNumber": 24,
+      "pickupPeriod": {
+        "label": "รอบที่ 3",
+        "time": "20:00–20:30"
+      }
     },
     {
       "email": "itsariyapronarchawakom@gmail.com",
@@ -2448,14 +3132,14 @@
           "rank": 3
         },
         {
-          "item": "ทาโกะ ชีส",
-          "rank": 4
+          "item": "เค้กดอกไม้",
+          "rank": 8
         }
       ],
-      "queueNumber": 47,
+      "queueNumber": 61,
       "pickupPeriod": {
-        "label": "รอบที่ 5",
-        "time": "21:00–21:30"
+        "label": "รอบที่ 7",
+        "time": "22:00–22:30"
       }
     },
     {
@@ -2472,44 +3156,44 @@
           "rank": 2
         },
         {
-          "item": "เปาฮิปโป ชมพู",
-          "rank": 4
+          "item": "เซ็ตถุงกับกล่อง",
+          "rank": 3
         }
       ],
-      "queueNumber": 1,
+      "queueNumber": 6,
       "pickupPeriod": {
         "label": "รอบที่ 1",
         "time": "19:00–19:30"
       }
     },
     {
-      "email": "mormewzz@gmail.com",
+      "email": "p.natheera@gmail.com",
       "name": "มิว",
-      "lineId": "mormewzz",
+      "lineId": "mewmill189",
       "items": [
         {
           "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
           "rank": 1
         },
         {
-          "item": "ทาโกะ กุ้ง",
+          "item": "เซ็ตคัพเค้กจมูกแดง",
           "rank": 2
         },
         {
-          "item": "เค้กดอกไม้",
-          "rank": 3
+          "item": "รองเท้าจมูกแดง เข้ม",
+          "rank": 4
         }
       ],
-      "queueNumber": 30,
+      "queueNumber": 16,
       "pickupPeriod": {
-        "label": "รอบที่ 3",
-        "time": "20:00–20:30"
+        "label": "รอบที่ 2",
+        "time": "19:30–20:00"
       }
     },
     {
-      "email": "p.natheera@gmail.com",
+      "email": "mormewzz@gmail.com",
       "name": "มิว",
-      "lineId": "mewmill189",
+      "lineId": "mormewzz",
       "items": [],
       "queueNumber": null,
       "pickupPeriod": null
@@ -2540,19 +3224,59 @@
           "rank": 3
         }
       ],
-      "queueNumber": 36,
+      "queueNumber": 56,
       "pickupPeriod": {
-        "label": "รอบที่ 4",
-        "time": "20:30–21:00"
+        "label": "รอบที่ 6",
+        "time": "21:30–22:00"
       }
     },
     {
       "email": "methaveeming@gmail.com",
       "name": "เมธาวี วัฒนชูสกุล",
       "lineId": "mingmethavee",
-      "items": [],
-      "queueNumber": null,
-      "pickupPeriod": null
+      "items": [
+        {
+          "item": "เค้กดอกไม้",
+          "rank": 1
+        },
+        {
+          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
+          "rank": 2
+        },
+        {
+          "item": "เซ็ตคัพเค้กจมูกแดง",
+          "rank": 4
+        }
+      ],
+      "queueNumber": 95,
+      "pickupPeriod": {
+        "label": "รอบที่ 8",
+        "time": "22:30–23:00"
+      }
+    },
+    {
+      "email": "sasawan1999@gmail.com",
+      "name": "เมย์",
+      "lineId": "Ssw.may",
+      "items": [
+        {
+          "item": "ทาโกะ หมึก",
+          "rank": 1
+        },
+        {
+          "item": "ทาโกะ ชีส",
+          "rank": 3
+        },
+        {
+          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
+          "rank": 5
+        }
+      ],
+      "queueNumber": 80,
+      "pickupPeriod": {
+        "label": "รอบที่ 7",
+        "time": "22:00–22:30"
+      }
     },
     {
       "email": "panidahiranyapuk@gmail.com",
@@ -2580,10 +3304,10 @@
           "rank": 4
         }
       ],
-      "queueNumber": 18,
+      "queueNumber": 10,
       "pickupPeriod": {
-        "label": "รอบที่ 2",
-        "time": "19:30–20:00"
+        "label": "รอบที่ 1",
+        "time": "19:00–19:30"
       }
     },
     {
@@ -2598,65 +3322,65 @@
       "email": "ppnasx@gmail.com",
       "name": "ริน",
       "lineId": "pptmorr",
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
+    },
+    {
+      "email": "pphitphit.4111@gmail.com",
+      "name": "ลิณ",
+      "lineId": "phitphit_",
       "items": [
         {
-          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
+          "item": "เปาฮิปโป ชมพู",
           "rank": 1
         },
         {
-          "item": "เซ็ตคัพเค้กจมูกแดง",
+          "item": "เค้กดอกไม้",
           "rank": 2
         },
         {
-          "item": "เค้กดอกไม้",
-          "rank": 3
+          "item": "เซ็ตคัพเค้กจมูกแดง",
+          "rank": 5
         }
       ],
-      "queueNumber": 79,
+      "queueNumber": 100,
       "pickupPeriod": {
         "label": "รอบที่ 8",
         "time": "22:30–23:00"
       }
     },
     {
-      "email": "pphitphit.4111@gmail.com",
-      "name": "ลิณ",
-      "lineId": "phitphit_",
-      "items": [],
-      "queueNumber": null,
-      "pickupPeriod": null
-    },
-    {
       "email": "lastkommyzang@gmail.com",
       "name": "วชิรพงศ์",
       "lineId": "tkoaom",
-      "items": [],
-      "queueNumber": null,
-      "pickupPeriod": null
+      "items": [
+        {
+          "item": "ชีสเบอร์เกอร์ฮิปโป",
+          "rank": 1
+        },
+        {
+          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
+          "rank": 7
+        },
+        {
+          "item": "เซ็ตคัพเค้กจมูกแดง",
+          "rank": 8
+        }
+      ],
+      "queueNumber": 77,
+      "pickupPeriod": {
+        "label": "รอบที่ 7",
+        "time": "22:00–22:30"
+      }
     },
     {
       "email": "pimmadavarn@gmail.com",
       "name": "ว่าน",
       "lineId": "varn_170647",
-      "items": [
-        {
-          "item": "มันเชฟจมูกแดง ปัง",
-          "rank": 1
-        },
-        {
-          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
-          "rank": 2
-        },
-        {
-          "item": "เซ็ตคัพเค้กจมูกแดง",
-          "rank": 3
-        }
-      ],
-      "queueNumber": 38,
-      "pickupPeriod": {
-        "label": "รอบที่ 4",
-        "time": "20:30–21:00"
-      }
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
     },
     {
       "email": "waridsaralekwong@gmail.com",
@@ -2672,20 +3396,36 @@
           "rank": 2
         },
         {
-          "item": "เค้กดอกไม้",
-          "rank": 7
+          "item": "ถุงกระดาษ",
+          "rank": 5
         }
       ],
-      "queueNumber": 8,
+      "queueNumber": 30,
       "pickupPeriod": {
-        "label": "รอบที่ 1",
-        "time": "19:00–19:30"
+        "label": "รอบที่ 3",
+        "time": "20:00–20:30"
       }
+    },
+    {
+      "email": "skatebotan@gmail.com",
+      "name": "ศรันย์",
+      "lineId": "0904400334",
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
     },
     {
       "email": "sirinan.kongsuphon@gmail.com",
       "name": "ศิรินันท์ กองสุผล",
       "lineId": "0615375710",
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
+    },
+    {
+      "email": "10800.10800bs@gmail.com",
+      "name": "ศุภกิจ",
+      "lineId": "10800bangsue",
       "items": [],
       "queueNumber": null,
       "pickupPeriod": null
@@ -2699,12 +3439,68 @@
       "pickupPeriod": null
     },
     {
+      "email": "suparada.nut41@gmail.com",
+      "name": "ศุภรดา ขอพิมาย",
+      "lineId": "nuttynoi09",
+      "items": [
+        {
+          "item": "มันเชฟจมูกแดง ปัง",
+          "rank": 1
+        },
+        {
+          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
+          "rank": 2
+        },
+        {
+          "item": "เซ็ตคัพเค้กจมูกแดง",
+          "rank": 6
+        }
+      ],
+      "queueNumber": 81,
+      "pickupPeriod": {
+        "label": "รอบที่ 8",
+        "time": "22:30–23:00"
+      }
+    },
+    {
       "email": "peem.yanisa15@gmail.com",
       "name": "สกุ้ดชี้ๆๆ",
       "lineId": "0912569603",
-      "items": [],
-      "queueNumber": null,
-      "pickupPeriod": null
+      "items": [
+        {
+          "item": "เค้กดอกไม้",
+          "rank": 1
+        }
+      ],
+      "queueNumber": 73,
+      "pickupPeriod": {
+        "label": "รอบที่ 7",
+        "time": "22:00–22:30"
+      }
+    },
+    {
+      "email": "ganskate251056@gmail.com",
+      "name": "สเก็ต",
+      "lineId": "Skate200858",
+      "items": [
+        {
+          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
+          "rank": 1
+        },
+        {
+          "item": "เซ็ตคัพเค้กจมูกแดง",
+          "rank": 2
+        },
+        {
+          "item": "เซ็ตพุทราแลบลิ้น",
+          "rank": 3
+        }
+      ],
+      "queueNumber": 13,
+      "pickupPeriod": {
+        "label": "รอบที่ 2",
+        "time": "19:30–20:00"
+      }
     },
     {
       "email": "spntp26@gmail.com",
@@ -2714,33 +3510,33 @@
         {
           "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
           "rank": 1
-        },
-        {
-          "item": "ชีสเบอร์เกอร์ฮิปโป",
-          "rank": 2
-        },
-        {
-          "item": "ทาโกะ กุ้ง",
-          "rank": 3
         }
       ],
-      "queueNumber": 14,
+      "queueNumber": 96,
       "pickupPeriod": {
-        "label": "รอบที่ 2",
-        "time": "19:30–20:00"
+        "label": "รอบที่ 8",
+        "time": "22:30–23:00"
       }
     },
     {
       "email": "somsonyanalak@gmail.com",
       "name": "ส้ม",
       "lineId": "544339138",
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
+    },
+    {
+      "email": "sarunporn.fuengphian@gmail.com",
+      "name": "สรัล",
+      "lineId": "srp95.",
       "items": [
         {
-          "item": "มันเชฟจมูกแดง ปัง",
+          "item": "เซ็ตถุงกับกล่อง",
           "rank": 1
         },
         {
-          "item": "ทาโกะ กุ้ง",
+          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
           "rank": 2
         },
         {
@@ -2748,35 +3544,19 @@
           "rank": 3
         }
       ],
-      "queueNumber": 52,
+      "queueNumber": 22,
       "pickupPeriod": {
-        "label": "รอบที่ 6",
-        "time": "21:30–22:00"
+        "label": "รอบที่ 3",
+        "time": "20:00–20:30"
       }
     },
     {
       "email": "coco2545may@gmail.com",
       "name": "สุริฉาย",
       "lineId": "kdn0111",
-      "items": [
-        {
-          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
-          "rank": 1
-        },
-        {
-          "item": "ทาโกะ ชีส",
-          "rank": 2
-        },
-        {
-          "item": "กล้วยหั่น",
-          "rank": 6
-        }
-      ],
-      "queueNumber": 72,
-      "pickupPeriod": {
-        "label": "รอบที่ 8",
-        "time": "22:30–23:00"
-      }
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
     },
     {
       "email": "stamppp4956@gmail.com",
@@ -2790,17 +3570,9 @@
       "email": "punnita.yaya@gmail.com",
       "name": "หมีลูกหยู",
       "lineId": "meelookyoo",
-      "items": [
-        {
-          "item": "เค้กดอกไม้",
-          "rank": 1
-        }
-      ],
-      "queueNumber": 80,
-      "pickupPeriod": {
-        "label": "รอบที่ 8",
-        "time": "22:30–23:00"
-      }
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
     },
     {
       "email": "terapat.p@ku.th",
@@ -2822,25 +3594,17 @@
       "email": "narachata.2241@gmail.com",
       "name": "อจ",
       "lineId": "10xain10",
-      "items": [
-        {
-          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
-          "rank": 1
-        },
-        {
-          "item": "เซ็ตคัพเค้กจมูกแดง",
-          "rank": 2
-        },
-        {
-          "item": "เซ็ตพุทราแลบลิ้น",
-          "rank": 3
-        }
-      ],
-      "queueNumber": 60,
-      "pickupPeriod": {
-        "label": "รอบที่ 6",
-        "time": "21:30–22:00"
-      }
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
+    },
+    {
+      "email": "tae.amontep25@gmail.com",
+      "name": "อมรเทพ",
+      "lineId": "skunkmc",
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
     },
     {
       "email": "teerapat1.jampaiboon@gmail.com",
@@ -2876,15 +3640,39 @@
           "rank": 1
         },
         {
-          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
-          "rank": 4
+          "item": "เซ็ตถุงกับกล่อง",
+          "rank": 3
         },
         {
-          "item": "เซ็ตคัพเค้กจมูกแดง",
-          "rank": 6
+          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
+          "rank": 4
         }
       ],
-      "queueNumber": 40,
+      "queueNumber": 46,
+      "pickupPeriod": {
+        "label": "รอบที่ 5",
+        "time": "21:00–21:30"
+      }
+    },
+    {
+      "email": "chotwong9000@gmail.com",
+      "name": "ออเอ",
+      "lineId": "thawat2803",
+      "items": [
+        {
+          "item": "เค้กดอกไม้",
+          "rank": 1
+        },
+        {
+          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
+          "rank": 2
+        },
+        {
+          "item": "เซ็ตพุทราแลบลิ้น",
+          "rank": 5
+        }
+      ],
+      "queueNumber": 31,
       "pickupPeriod": {
         "label": "รอบที่ 4",
         "time": "20:30–21:00"
@@ -2916,10 +3704,10 @@
           "rank": 3
         }
       ],
-      "queueNumber": 57,
+      "queueNumber": 7,
       "pickupPeriod": {
-        "label": "รอบที่ 6",
-        "time": "21:30–22:00"
+        "label": "รอบที่ 1",
+        "time": "19:00–19:30"
       }
     },
     {
@@ -2934,9 +3722,25 @@
       "email": "ainthirat255115@gmail.com",
       "name": "อินทร์ทิราช",
       "lineId": "aim.air",
-      "items": [],
-      "queueNumber": null,
-      "pickupPeriod": null
+      "items": [
+        {
+          "item": "ชีสเบอร์เกอร์ฮิปโป",
+          "rank": 1
+        },
+        {
+          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
+          "rank": 3
+        },
+        {
+          "item": "เซ็ตคัพเค้กจมูกแดง",
+          "rank": 4
+        }
+      ],
+      "queueNumber": 92,
+      "pickupPeriod": {
+        "label": "รอบที่ 8",
+        "time": "22:30–23:00"
+      }
     },
     {
       "email": "evepakji@gmail.com",
@@ -2956,10 +3760,10 @@
           "rank": 5
         }
       ],
-      "queueNumber": 69,
+      "queueNumber": 82,
       "pickupPeriod": {
-        "label": "รอบที่ 7",
-        "time": "22:00–22:30"
+        "label": "รอบที่ 8",
+        "time": "22:30–23:00"
       }
     },
     {
@@ -2971,20 +3775,64 @@
       "pickupPeriod": null
     },
     {
-      "email": "chaaem14@gmail.com",
-      "name": "เอม",
-      "lineId": "aenajao49",
+      "email": "kkm3vintage@gmail.com",
+      "name": "อุ้ม",
+      "lineId": "Marshmallo3",
       "items": [],
       "queueNumber": null,
       "pickupPeriod": null
     },
     {
-      "email": "emmika101@gmail.com",
-      "name": "เอมมี่",
-      "lineId": "emmylovemyk",
+      "email": "koreagirltob@gmail.com",
+      "name": "เอ๋",
+      "lineId": "chanisa64",
       "items": [],
       "queueNumber": null,
       "pickupPeriod": null
+    },
+    {
+      "email": "chaaem14@gmail.com",
+      "name": "เอม",
+      "lineId": "aenajao49",
+      "items": [
+        {
+          "item": "ปลาบล็อบ",
+          "rank": 1
+        },
+        {
+          "item": "ทาโกะ กุ้ง",
+          "rank": 2
+        },
+        {
+          "item": "รองเท้าจมูกแดง อ่อน",
+          "rank": 4
+        }
+      ],
+      "queueNumber": 75,
+      "pickupPeriod": {
+        "label": "รอบที่ 7",
+        "time": "22:00–22:30"
+      }
+    },
+    {
+      "email": "emmika101@gmail.com",
+      "name": "เอมมี่",
+      "lineId": "emmylovemyk",
+      "items": [
+        {
+          "item": "ทาโกะ ชีส",
+          "rank": 1
+        },
+        {
+          "item": "ถุงกระดาษ",
+          "rank": 4
+        }
+      ],
+      "queueNumber": 99,
+      "pickupPeriod": {
+        "label": "รอบที่ 8",
+        "time": "22:30–23:00"
+      }
     },
     {
       "email": "uuki3004@gmail.com",
@@ -2998,9 +3846,25 @@
       "email": "auranatara23@gmail.com",
       "name": "แอปเปิ้ล",
       "lineId": "apple9apple",
-      "items": [],
-      "queueNumber": null,
-      "pickupPeriod": null
+      "items": [
+        {
+          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
+          "rank": 1
+        },
+        {
+          "item": "เซ็ตคัพเค้กจมูกแดง",
+          "rank": 2
+        },
+        {
+          "item": "เซ็ตพุทราแลบลิ้น",
+          "rank": 4
+        }
+      ],
+      "queueNumber": 87,
+      "pickupPeriod": {
+        "label": "รอบที่ 8",
+        "time": "22:30–23:00"
+      }
     },
     {
       "email": "ozoneee27@gmail.com",
@@ -3022,46 +3886,46 @@
       "email": "kittidej.c9@gmail.com",
       "name": "เเบร์",
       "lineId": "bear.cpnm",
-      "items": [
-        {
-          "item": "มันเชฟจมูกแดง ปัง",
-          "rank": 1
-        },
-        {
-          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
-          "rank": 2
-        },
-        {
-          "item": "ชีสเบอร์เกอร์ฮิปโป",
-          "rank": 3
-        }
-      ],
-      "queueNumber": 50,
-      "pickupPeriod": {
-        "label": "รอบที่ 5",
-        "time": "21:00–21:30"
-      }
+      "items": [],
+      "queueNumber": null,
+      "pickupPeriod": null
     },
     {
       "email": "aichandesuwa69@gmail.com",
       "name": "アイ",
       "lineId": "toeyzoez_",
-      "items": [],
-      "queueNumber": null,
-      "pickupPeriod": null
+      "items": [
+        {
+          "item": "เค้กดอกไม้",
+          "rank": 1
+        },
+        {
+          "item": "เซ็ตคัพเค้กจมูกแดง",
+          "rank": 2
+        },
+        {
+          "item": "เซ็ตสตรอว์เบอร์รี่จมูกแดง",
+          "rank": 3
+        }
+      ],
+      "queueNumber": 2,
+      "pickupPeriod": {
+        "label": "รอบที่ 1",
+        "time": "19:00–19:30"
+      }
     }
   ],
   "disqualified": [
     {
-      "email": "warissara.pholbunnamlarp@gmail.com",
-      "name": "Ann",
-      "lineId": "anny0823212707",
+      "email": "boonbuabb@gmail.com",
+      "name": "BiiMBiiM S.",
+      "lineId": "lamoon_bim",
       "disqualifiedReason": "duplicate_rank"
     },
     {
-      "email": "jakkritd23@gmail.com",
-      "name": "Jakkrit",
-      "lineId": "chaoun23",
+      "email": "boatniez.69@gmail.com",
+      "name": "Boat",
+      "lineId": "Boat5216_boatniez",
       "disqualifiedReason": "duplicate_rank"
     },
     {
@@ -3083,27 +3947,21 @@
       "disqualifiedReason": "duplicate_rank"
     },
     {
-      "email": "peradawongpan@gmail.com",
-      "name": "Ota",
-      "lineId": "ota_support",
+      "email": "yadapokky25@gmail.com",
+      "name": "Pokky",
+      "lineId": "Yadapokky",
       "disqualifiedReason": "duplicate_rank"
     },
     {
-      "email": "ananyayaning@gmail.com",
-      "name": "คะนิ้ง",
-      "lineId": "nin25433",
+      "email": "dunchia307@gmail.com",
+      "name": "Sushi",
+      "lineId": "shikiboom",
       "disqualifiedReason": "duplicate_rank"
     },
     {
-      "email": "tlilapay@gmail.com",
-      "name": "แคร์",
-      "lineId": "0954627195",
-      "disqualifiedReason": "duplicate_rank"
-    },
-    {
-      "email": "jamsps18@gmail.com",
-      "name": "เจ",
-      "lineId": "Pchnn.",
+      "email": "ploypapatployploy@gmail.com",
+      "name": "ข้าวหอม67",
+      "lineId": "ploypapatployploy555",
       "disqualifiedReason": "duplicate_rank"
     },
     {
@@ -3119,15 +3977,9 @@
       "disqualifiedReason": "duplicate_rank"
     },
     {
-      "email": "shinnutthikan@gmail.com",
-      "name": "ฝ้าย",
-      "lineId": "Punnii_pun",
-      "disqualifiedReason": "duplicate_rank"
-    },
-    {
-      "email": "botanskate@gmail.com",
-      "name": "พ้ชรวดี",
-      "lineId": "Botanbotan24",
+      "email": "lovedancejob88@gmail.com",
+      "name": "น้องวันหวาน",
+      "lineId": "patsen88",
       "disqualifiedReason": "duplicate_rank"
     },
     {
@@ -3137,27 +3989,9 @@
       "disqualifiedReason": "duplicate_rank"
     },
     {
-      "email": "nawinda.29@gmail.com",
-      "name": "พี่เบลสุดสวย",
-      "lineId": "090b199",
-      "disqualifiedReason": "duplicate_rank"
-    },
-    {
-      "email": "ake_kung29@hotmail.com",
-      "name": "พี่เอกกี้",
-      "lineId": "ake0866029622",
-      "disqualifiedReason": "duplicate_rank"
-    },
-    {
       "email": "arinpatcharasuwakul@gmail.com",
       "name": "แพรวา",
       "lineId": "babyjuu.i",
-      "disqualifiedReason": "duplicate_rank"
-    },
-    {
-      "email": "sasawan1999@gmail.com",
-      "name": "เมย์",
-      "lineId": "Ssw.may",
       "disqualifiedReason": "duplicate_rank"
     },
     {
@@ -3170,6 +4004,12 @@
       "email": "undisreals@gmail.com",
       "name": "สมภพ",
       "lineId": "somphop1573",
+      "disqualifiedReason": "duplicate_rank"
+    },
+    {
+      "email": "meerattapoom@gmail.com",
+      "name": "หมี",
+      "lineId": "Rattapoommee",
       "disqualifiedReason": "duplicate_rank"
     },
     {
