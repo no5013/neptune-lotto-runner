@@ -103,7 +103,6 @@ function SearchTab({ data }: { data: ResultsData }) {
   const [query, setQuery] = useState("");
   const [result, setResult] = useState<Person | DisqualifiedPerson | null | "not-found">(null);
   const [isDisqualified, setIsDisqualified] = useState(false);
-  const [matchedByLineId, setMatchedByLineId] = useState(false);
 
   function isLineIdMatch(p: { lineId: string }, q: string) {
     return (
@@ -116,29 +115,22 @@ function SearchTab({ data }: { data: ResultsData }) {
     const q = query.trim().toLowerCase();
     if (!q) return;
 
-    const found = data.results.find(
-      (p) => p.email.toLowerCase() === q || isLineIdMatch(p, q)
-    );
+    const found = data.results.find((p) => isLineIdMatch(p, q));
     if (found) {
       setResult(found);
       setIsDisqualified(false);
-      setMatchedByLineId(isLineIdMatch(found, q));
       return;
     }
 
-    const dq = data.disqualified?.find(
-      (p) => p.email.toLowerCase() === q || isLineIdMatch(p, q)
-    );
+    const dq = data.disqualified?.find((p) => isLineIdMatch(p, q));
     if (dq) {
       setResult(dq);
       setIsDisqualified(true);
-      setMatchedByLineId(isLineIdMatch(dq, q));
       return;
     }
 
     setResult("not-found");
     setIsDisqualified(false);
-    setMatchedByLineId(false);
   }
 
   function handleKeyDown(e: React.KeyboardEvent) {
@@ -149,13 +141,15 @@ function SearchTab({ data }: { data: ResultsData }) {
   const dqPerson = result && result !== "not-found" && isDisqualified ? result as DisqualifiedPerson : null;
   const reasonLabel = dqPerson?.disqualifiedReason === "cheat_flag"
     ? "ให้ข้อมูลไม่ถูกต้อง (ถูกตัดสิทธิ์)"
+    : dqPerson?.disqualifiedReason === "duplicate_line_id"
+    ? "LINE ID ซ้ำกับคนอื่น"
     : "จัดอันดับซ้ำกัน";
 
   return (
     <div className="max-w-lg mx-auto mt-8 space-y-6">
       <div className="bg-white rounded-2xl shadow-md p-6 space-y-4">
         <p className="text-sm text-gray-500">
-          ใส่ <strong>Email</strong> หรือ <strong>LINE ID</strong> เพื่อเช็คว่าได้อะไรนะ 👀
+          ใส่ <strong>LINE ID</strong> เพื่อเช็คว่าได้อะไรนะ 👀
         </p>
         <div className="flex gap-2">
           <input
@@ -163,7 +157,7 @@ function SearchTab({ data }: { data: ResultsData }) {
             value={query}
             onChange={(e) => { setQuery(e.target.value); setResult(null); }}
             onKeyDown={handleKeyDown}
-            placeholder="เช่น you@email.com หรือ @lineid"
+            placeholder="เช่น @lineid"
             className="flex-1 border border-gray-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-teal-400"
           />
           <button
@@ -179,7 +173,7 @@ function SearchTab({ data }: { data: ResultsData }) {
         <div className="bg-red-50 border border-red-200 rounded-2xl p-6 text-center">
           <p className="text-3xl mb-2">😔</p>
           <p className="font-semibold text-red-700">ไม่เจอข้อมูลนะ</p>
-          <p className="text-sm text-red-500 mt-1">ลองเช็ค Email หรือ LINE ID ใหม่อีกทีนะ</p>
+          <p className="text-sm text-red-500 mt-1">ลองเช็ค LINE ID ใหม่อีกทีนะ</p>
         </div>
       )}
 
@@ -251,17 +245,15 @@ function SearchTab({ data }: { data: ResultsData }) {
                   key={i}
                   item={r.item}
                   rank={r.rank}
-                  price={matchedByLineId ? (prices[r.item] ?? 0) : undefined}
+                  price={prices[r.item] ?? 0}
                 />
               ))}
-              {matchedByLineId && (
-                <div className="flex items-center justify-between bg-teal-500 text-white rounded-xl px-4 py-3 mt-1">
-                  <span className="font-semibold text-sm">ยอดรวมทั้งหมด</span>
-                  <span className="font-extrabold text-lg">
-                    ฿{person.items.reduce((sum, r) => sum + (prices[r.item] ?? 0), 0).toLocaleString()}
-                  </span>
-                </div>
-              )}
+              <div className="flex items-center justify-between bg-teal-500 text-white rounded-xl px-4 py-3 mt-1">
+                <span className="font-semibold text-sm">ยอดรวมทั้งหมด</span>
+                <span className="font-extrabold text-lg">
+                  ฿{person.items.reduce((sum, r) => sum + (prices[r.item] ?? 0), 0).toLocaleString()}
+                </span>
+              </div>
             </div>
           )}
         </div>
@@ -361,7 +353,13 @@ function AllResultsTab({ data }: { data: ResultsData }) {
               </div>
               {p.disqualified ? (
                 <Badge
-                  label={p.disqualifiedReason === "cheat_flag" ? "⚠️ ถูกตัดสิทธิ์" : "⚠️ อันดับซ้ำ"}
+                  label={
+                    p.disqualifiedReason === "cheat_flag"
+                      ? "⚠️ ถูกตัดสิทธิ์"
+                      : p.disqualifiedReason === "duplicate_line_id"
+                      ? "⚠️ LINE ID ซ้ำ"
+                      : "⚠️ อันดับซ้ำ"
+                  }
                   color="red"
                 />
               ) : p.won ? (

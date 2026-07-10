@@ -136,6 +136,61 @@ async function buildExcel(winners: Winner[], prices: Record<string, number>, out
   await wb.xlsx.writeFile(outPath);
 }
 
+// ── Demand sheet ──────────────────────────────────────────────────────────────
+function addDemandSheet(
+  wb: ExcelJS.Workbook,
+  demandData: { ranks: number[]; items: Record<string, Record<number, number>> },
+) {
+  const ws = wb.addWorksheet("Demand Preview");
+  const TEAL  = "2A9D8F";
+  const GREEN = "D4EDDA";
+  const thinBorder: Partial<ExcelJS.Borders> = {
+    top:    { style: "thin", color: { argb: "FFBBBBBB" } },
+    left:   { style: "thin", color: { argb: "FFBBBBBB" } },
+    bottom: { style: "thin", color: { argb: "FFBBBBBB" } },
+    right:  { style: "thin", color: { argb: "FFBBBBBB" } },
+  };
+
+  const { ranks, items } = demandData;
+  const itemNames = Object.keys(items);
+
+  // Header row: "Item" | Rank 1 | Rank 2 | ...
+  ws.columns = [
+    { header: "Item", width: 30, key: "item" },
+    ...ranks.map(r => ({ header: `Rank ${r}`, width: 10, key: `r${r}` })),
+    { header: "Total", width: 10, key: "total" },
+  ];
+  ws.getRow(1).eachCell(cell => {
+    cell.font      = { bold: true, color: { argb: "FFFFFFFF" }, size: 11 };
+    cell.fill      = { type: "pattern", pattern: "solid", fgColor: { argb: `FF${TEAL}` } };
+    cell.alignment = { horizontal: "center", vertical: "middle" };
+    cell.border    = thinBorder;
+  });
+  ws.getRow(1).height = 22;
+
+  // Data rows
+  itemNames.forEach((name, i) => {
+    const counts = ranks.map(r => items[name][r] ?? 0);
+    const total  = counts.reduce((s, c) => s + c, 0);
+    const row    = ws.addRow([name, ...counts, total]);
+    const fillArgb = i % 2 === 0 ? "FFFFFFFF" : "FFF8F8F8";
+    row.eachCell((cell, col) => {
+      cell.alignment = { horizontal: col === 1 ? "left" : "center", vertical: "middle" };
+      cell.border    = thinBorder;
+      cell.fill      = { type: "pattern", pattern: "solid", fgColor: { argb: fillArgb } };
+    });
+    // Highlight rank 1 column
+    const rank1Cell = row.getCell(2);
+    if ((items[name][ranks[0]] ?? 0) > 0) {
+      rank1Cell.fill = { type: "pattern", pattern: "solid", fgColor: { argb: `FF${GREEN}` } };
+      rank1Cell.font = { bold: true };
+    }
+    row.height = 18;
+  });
+
+  ws.views = [{ state: "frozen", ySplit: 1 }];
+}
+
 // ── Main ───────────────────────────────────────────────────────────────────
 async function main() {
   const args        = parseArgs();
@@ -146,6 +201,15 @@ async function main() {
   const outPath = args.output ?? path.join(path.dirname(resultsPath), "winners_export.xlsx");
 
   await buildExcel(winners, prices, outPath);
+
+  // Add demand sheet if demand_preview.json exists
+  const demandPath = path.join(path.dirname(resultsPath), "demand_preview.json");
+  if (fs.existsSync(demandPath)) {
+    const existingWb = new ExcelJS.Workbook();
+    await existingWb.xlsx.readFile(outPath);
+    addDemandSheet(existingWb, JSON.parse(fs.readFileSync(demandPath, "utf-8")));
+    await existingWb.xlsx.writeFile(outPath);
+  }
 
   const grandTotal = winners.reduce((s, p) =>
     s + p.items.reduce((ss, r) => ss + (prices[r.item] ?? 0), 0), 0);
