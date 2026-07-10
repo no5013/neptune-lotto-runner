@@ -157,7 +157,7 @@ function SearchTab({ data }: { data: ResultsData }) {
             value={query}
             onChange={(e) => { setQuery(e.target.value); setResult(null); }}
             onKeyDown={handleKeyDown}
-            placeholder="เช่น @lineid"
+            placeholder="เช่น lineid"
             className="flex-1 border border-gray-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-teal-400"
           />
           <button
