@@ -22,7 +22,7 @@ const OUTPUT_DIR = path.join(ROOT, "output");
 const RANKING_PREFIX = "Ranking:";
 const EMAIL_COL      = "Email Address";
 const NAME_COL       = "ชื่อ (สามารถใช้ชื่ออะไรก็ได้)";
-const LINE_COL       = "LINE ID";
+const LINE_COL       = "LINE ID (ลงทะเบียนได้เพียง 1 ครั้งต่อคนเท่านั้น)";
 const CHEAT_COL      = "CHEAT";
 const ITEM_REGEX     = /\[([^\]]+)\]/;
 const RANK_REGEX     = /Rank\s*(\d+)/i;
@@ -86,6 +86,7 @@ function parseArgs() {
     input:        get("--input")         ?? path.join(INPUT_DIR, "form-submissions.csv"),
     itemsFile:    get("--items-file")    ?? path.join(INPUT_DIR, "items.json"),
     configFile:   get("--config-file")   ?? path.join(INPUT_DIR, "event_config.json"),
+    blacklistFile: get("--blacklist-file") ?? path.join(INPUT_DIR, "blacklist.json"),
     outputDir:    get("--output-dir")    ?? null,
     defaultCap:   parseInt(get("--capacity") ?? "20", 10),
     maxWins:      get("--max-wins")      ? parseInt(get("--max-wins")!, 10) : null,
@@ -98,6 +99,12 @@ function loadConfig(configFile: string): EventConfig {
   const defaults: EventConfig = { max_wins_per_person: 2, total_winners: null, pickup_periods: [] };
   if (!fs.existsSync(configFile)) return defaults;
   return { ...defaults, ...JSON.parse(fs.readFileSync(configFile, "utf-8")) };
+}
+
+function loadBlacklist(blacklistFile: string): Set<string> {
+  if (!fs.existsSync(blacklistFile)) return new Set();
+  const entries: { lineId: string }[] = JSON.parse(fs.readFileSync(blacklistFile, "utf-8"));
+  return new Set(entries.map(e => e.lineId.toLowerCase().replace(/^@/, "")));
 }
 
 function loadItems(itemsFile: string, itemNames: string[], defaultCap: number) {
@@ -167,15 +174,20 @@ function main() {
   const itemNames = rankingColumns.map(c => itemByColumn[c]);
 
   const { capacities, prices } = loadItems(args.itemsFile, itemNames, args.defaultCap);
+  const blacklistedLineIds = loadBlacklist(args.blacklistFile);
 
   type Req = [email: string, item: string, rank: number];
   const requestsByRank = new Map<number, Req[]>();
   const allEligibleRequests: Req[] = [];
   let skippedCheat = 0;
   let skippedDupRank = 0;
+  let skippedDupLineId = 0;
+  let skippedBlacklist = 0;
   const eligibleEmails = new Set<string>();
   const profileByEmail = new Map<string, [name: string, lineId: string]>();
   const disqualified: DisqualifiedRecord[] = [];
+
+  const seenLineIds = new Set<string>();
 
   for (const row of rows) {
     const email = (row[EMAIL_COL] ?? "").trim();
@@ -190,6 +202,19 @@ function main() {
       disqualified.push({ email, name, lineId, disqualifiedReason: "cheat_flag" });
       continue;
     }
+
+    const lineIdKey = lineId.toLowerCase().replace(/^@/, "");
+
+    if (lineId && blacklistedLineIds.has(lineIdKey)) {
+      skippedBlacklist++;
+      continue;
+    }
+    if (lineId && seenLineIds.has(lineIdKey)) {
+      skippedDupLineId++;
+      disqualified.push({ email, name, lineId, disqualifiedReason: "duplicate_line_id" });
+      continue;
+    }
+    if (lineId) seenLineIds.add(lineIdKey);
 
     const rowReqs: Req[] = [];
     const rowRanks: number[] = [];
@@ -280,6 +305,8 @@ function main() {
     `Eligible unique emails: ${eligibleEmails.size}`,
     `Skipped rows (CHEAT=Yes): ${skippedCheat}`,
     `Skipped rows (duplicate ranks found): ${skippedDupRank}`,
+    `Skipped rows (duplicate LINE ID): ${skippedDupLineId}`,
+    `Skipped rows (blacklisted LINE ID): ${skippedBlacklist}`,
     `Total eligible requests: ${allEligibleRequests.length}`,
     `Unique winners: ${uniqueWinnerEmails.size}`,
     `Total assignments: ${assigned.length}`,
@@ -338,6 +365,18 @@ function main() {
 
   const jsonPath = path.join(outDir, "results.json");
   fs.writeFileSync(jsonPath, JSON.stringify(jsonData, null, 2) + "\n", "utf-8");
+
+  // ── Demand preview ────────────────────────────────────────────────────────
+  const allRanks = [...requestsByRank.keys()].sort((a, b) => a - b);
+  const demandByItem: Record<string, Record<number, number>> = {};
+  for (const name of itemNames) demandByItem[name] = {};
+  for (const [rank, reqs] of requestsByRank) {
+    for (const [, item] of reqs) {
+      demandByItem[item][rank] = (demandByItem[item][rank] ?? 0) + 1;
+    }
+  }
+  const demandData = { ranks: allRanks, items: demandByItem };
+  fs.writeFileSync(path.join(outDir, "demand_preview.json"), JSON.stringify(demandData, null, 2) + "\n", "utf-8");
 
   console.log(`Output folder : ${outDir}`);
   console.log(`Results       : ${path.join(outDir, "allocation_results.csv")}`);
